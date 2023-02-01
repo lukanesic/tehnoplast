@@ -1,0 +1,73 @@
+.sidemenu {
+  height: 100vh;
+  width: 700px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 100;
+
+  .menu-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    .close-btn {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 1.5rem;
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    ul {
+      margin-right: 10rem;
+
+      li {
+        list-style: none;
+        font-size: 30px;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: -2px;
+        margin: 1.5rem 0;
+        color: #393e42;
+        font-weight: 500;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition: border-bottom 0.8s ease;
+        width: fit-content;
+      }
+
+      li:hover {
+        border-bottom: 3px solid #f28c26;
+      }
+
+      .info {
+        margin-top: 5rem;
+        a {
+          display: block;
+          font-size: 18px;
+          margin: 1rem 0;
+          text-decoration: none;
+          font-family: 'Inter', sans-serif;
+          letter-spacing: -1px;
+          font-weight: 500;
+        }
+
+        .email {
+          color: #f28c26;
+          border-bottom: 1px solid #f28c26;
+          width: fit-content;
+        }
+
+        .phone {
+          color: #393e42;
+        }
+      }
+    }
+  }
+}

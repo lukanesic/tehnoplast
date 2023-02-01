@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  color: #fff;
+}
+nav .links-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+nav .links-menu ul {
+  display: flex;
+  margin-right: 4rem;
+}
+nav .links-menu ul li {
+  list-style: none;
+  margin: 0 1.5rem;
+}
+nav .links-menu .hamburger-btn {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .links-menu .hamburger-btn span {
+  cursor: pointer;
+}
+nav .links-menu .hamburger-btn .sticky {
+  position: fixed;
+  top: 2rem;
+  right: 10vw;
+}
+
+.dropback {
+  width: 100%;
+  height: 100vh;
+  background-color: #f28c26;
+  opacity: 20%;
+  z-index: 90;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.sidemenu {
+  height: 100vh;
+  width: 700px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+.sidemenu .menu-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.sidemenu .menu-container .close-btn {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  font-family: "Inter", sans-serif;
+}
+.sidemenu .menu-container ul {
+  margin-right: 10rem;
+}
+.sidemenu .menu-container ul li {
+  list-style: none;
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -2px;
+  margin: 1.5rem 0;
+  color: #393e42;
+  font-weight: 500;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.8s ease;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.sidemenu .menu-container ul li:hover {
+  border-bottom: 3px solid #f28c26;
+}
+.sidemenu .menu-container ul .info {
+  margin-top: 5rem;
+}
+.sidemenu .menu-container ul .info a {
+  display: block;
+  font-size: 18px;
+  margin: 1rem 0;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+.sidemenu .menu-container ul .info .email {
+  color: #f28c26;
+  border-bottom: 1px solid #f28c26;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.sidemenu .menu-container ul .info .phone {
+  color: #393e42;
+}/*# sourceMappingURL=global.css.map */
