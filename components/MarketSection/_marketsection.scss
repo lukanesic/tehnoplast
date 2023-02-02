@@ -1,0 +1,49 @@
+.market-section {
+  padding: 8rem 0;
+
+  .h2-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    letter-spacing: -2px;
+
+    font-weight: 400;
+  }
+
+  .number-counter {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem 0;
+
+    h5 {
+      font-size: 30px;
+      margin-right: 1rem;
+      font-weight: 600;
+    }
+
+    span {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 900;
+      background: -webkit-linear-gradient(45deg, #f28c26b7, #f28c26fa, #101a25);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #393e4278;
+    letter-spacing: -1px;
+    width: 300px;
+    line-height: 24px;
+
+    span {
+      font-weight: 500;
+      color: #393e42;
+    }
+  }
+}

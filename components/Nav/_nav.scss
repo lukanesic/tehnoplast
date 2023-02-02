@@ -1,0 +1,34 @@
+nav {
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .circle {
+      background-color: #e5853b9c;
+      border-radius: 50%;
+      outline: none;
+      transition: background 0.5s ease;
+      z-index: 110;
+      position: fixed;
+      top: 0.8rem;
+      right: 1rem;
+    }
+
+    .circle:hover {
+      background-color: #e5853be3;
+    }
+  }
+
+  .normal-logo {
+    position: relative;
+    width: 150px;
+    height: 70px;
+  }
+}

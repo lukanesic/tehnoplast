@@ -29,7 +29,7 @@ const Dropback = ({ open, setOpen }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }}
           onClick={() => setOpen(!open)}
-        />
+        ></motion.div>
       )}
     </AnimatePresence>
   )
