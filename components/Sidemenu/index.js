@@ -5,6 +5,22 @@ import Image from 'next/image'
 import logo from './../../public/images/tehnoplast-logo-dark.png'
 
 const Sidemenu = ({ open, setOpen }) => {
+  useEffect(() => {
+    if (open) {
+      const width = document.body.clientWidth
+      document.body.style.overflowY = 'hidden'
+      document.body.style.width = `${width}px`
+    } else {
+      document.body.style.overflowY = 'visible'
+      document.body.style.width = `auto`
+    }
+
+    return () => {
+      document.body.style.overflowY = 'visible'
+      document.body.style.width = `auto`
+    }
+  }, [open])
+
   return (
     <AnimatePresence>
       {open && (

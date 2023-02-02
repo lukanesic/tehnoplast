@@ -47,6 +47,7 @@ body {
   right: 0;
   background-color: #fff;
   z-index: 100;
+  overflow: hidden;
 }
 .sidemenu .menu-container {
   height: 100%;
