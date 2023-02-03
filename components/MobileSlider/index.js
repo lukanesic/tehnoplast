@@ -4,6 +4,8 @@ import Slider from 'react-slick'
 
 import prozori from './../../public/images/prozori-hero.jpg'
 import vrata from './../../public/images/vrata-hero.jpg'
+import kapije from './../../public/images/ograda-hero.png'
+import pregrade from './../../public/images/pregrad-hero.jpg'
 
 const data = [
   {
@@ -19,6 +21,20 @@ const data = [
     subtitle: 'Ulazna, sobna i klizna',
     src: vrata,
     alt: 'Tehnoplast Vrata PVC i ALU',
+  },
+  {
+    id: 3,
+    title: 'Kapije',
+    subtitle: 'Ograde, gelenderi i',
+    src: kapije,
+    alt: 'Tehnoplast Ograde, Gelenderi i Kapije PVC i ALU',
+  },
+  {
+    id: 4,
+    title: 'Sanitarne pregrade',
+    subtitle: 'Fiksni, rolo i plisirani',
+    src: pregrade,
+    alt: 'Tehnoplast Pregrade PVC i ALU',
   },
 ]
 

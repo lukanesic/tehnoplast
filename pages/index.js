@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Hero from '../components/Hero'
 import MarketSection from '../components/MarketSection'
 import MobileSlider from '../components/MobileSlider'
+import VideoSection from '../components/VideoSection'
 
 import MainLayout from '../layout/MainLayout'
 
@@ -20,12 +21,34 @@ export default function Home() {
           heading={'Proizvodi'}
           counterNum={'20'}
           counterDescription={'godina iskustva'}
+          boldDescription={'Naši proizvodi imaju široku primenu '}
+          description={
+            'u izgradnji nosivih konstrukcija iu svim vrstama ograda, kako u industrijskom tako i u privatnom sektoru.'
+          }
+        />
+
+        <MobileSlider />
+        <MarketSection
+          heading={'Proizvodnja'}
+          counterNum={'50'}
+          counterDescription={'zaposlenih'}
           boldDescription={'Naša proizvodnja '}
           description={
             'je posvećena sofisticiranim proizvodima od pvc i alu najvišeg kvaliteta.'
           }
         />
-        <MobileSlider />
+
+        <VideoSection />
+
+        <MarketSection
+          heading={'Po Vasoj meri'}
+          counterNum={'1000'}
+          counterDescription={'zadovoljnih musterija'}
+          boldDescription={'Mi isporučujemo naše proizvode širom sveta.'}
+          description={
+            'Naši proizvodi se uvek isporučuju na način koji Vam je najpristupačniji i najkorisniji.'
+          }
+        />
       </MainLayout>
     </>
   )
