@@ -293,16 +293,20 @@ footer .footer-container h4 {
   font-size: 26px;
   font-family: "Inter", sans-serif;
   letter-spacing: -1px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0.75rem 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: #393e42;
+  text-decoration: none;
 }
 footer .footer-container .email {
   color: #f28c26;
   border-bottom: 1px solid rgba(242, 140, 38, 0.5058823529);
+}
+footer .footer-container .phone {
+  color: #393e42;
 }
 footer .footer-container .socials {
   display: flex;

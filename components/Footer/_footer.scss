@@ -25,15 +25,20 @@ footer {
       font-size: 26px;
       font-family: 'Inter', sans-serif;
       letter-spacing: -1px;
-      font-weight: 500;
+      font-weight: 600;
       margin: 0.75rem 0;
       width: fit-content;
       color: #393e42;
+      text-decoration: none;
     }
 
     .email {
       color: #f28c26;
       border-bottom: 1px solid #f28c2681;
+    }
+
+    .phone {
+      color: #393e42;
     }
 
     .socials {
