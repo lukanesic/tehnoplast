@@ -4,9 +4,10 @@ const VideoSection = () => {
   return (
     <div className='video-section'>
       <video
-        autoplay='autoplay'
-        muted
         loop
+        muted
+        autoPlay
+        playsInline
         src={'images/video.mp4'}
         type='video/mp4'
       />
