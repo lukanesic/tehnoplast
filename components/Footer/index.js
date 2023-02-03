@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <p>Proizvodnja i ugradnja ALU i PVC stolarije od 2001. godine </p>
         <h4 className='email'>info@tehnoplast.co.rs </h4>
-        <h4 className='phone'>+ 381 66 455 253</h4>
+        <h4 className='tele'>+ 381 66 455 253</h4>
         <div className='socials'>
           <div className='s-icon insta' />
           <div className='s-icon face' />
