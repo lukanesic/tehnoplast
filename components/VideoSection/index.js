@@ -6,10 +6,10 @@ const VideoSection = () => {
       <video
         src={'images/video.mp4'}
         type='video/mp4'
-        loop
-        muted
-        autoPlay
-        playsInline
+        loop={true}
+        defaultMuted={true}
+        autoPlay={true}
+        playsInline={true}
       />
     </div>
   )
