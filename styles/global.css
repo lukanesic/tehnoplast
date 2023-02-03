@@ -180,11 +180,11 @@ nav .normal-logo {
 }
 
 .market-section {
-  padding: 8rem 0;
+  padding: 14rem 0;
 }
 .market-section .h2-heading {
   font-family: "Inter", sans-serif;
-  font-size: 30px;
+  font-size: 50px;
   letter-spacing: -2px;
   font-weight: 400;
 }
@@ -192,15 +192,15 @@ nav .normal-logo {
   display: flex;
   align-items: center;
   font-family: "Montserrat", sans-serif;
-  margin: 2rem 0;
+  margin: 5rem 0;
 }
 .market-section .number-counter h5 {
-  font-size: 30px;
+  font-size: 40px;
   margin-right: 1rem;
   font-weight: 600;
 }
 .market-section .number-counter span {
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 900;
   background: -webkit-linear-gradient(45deg, rgba(242, 140, 38, 0.7176470588), rgba(242, 140, 38, 0.9803921569), #101a25);
@@ -210,12 +210,12 @@ nav .normal-logo {
 }
 .market-section p {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   color: rgba(57, 62, 66, 0.4705882353);
   letter-spacing: -1px;
   width: 300px;
-  line-height: 24px;
+  line-height: 30px;
 }
 .market-section p span {
   font-weight: 500;
