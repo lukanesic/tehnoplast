@@ -289,7 +289,7 @@ footer .footer-container p {
   line-height: 30px;
   color: #393e42;
 }
-footer .footer-container h4 {
+footer .footer-container a {
   font-size: 26px;
   font-family: "Inter", sans-serif;
   letter-spacing: -1px;

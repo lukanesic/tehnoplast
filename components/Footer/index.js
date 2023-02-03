@@ -11,8 +11,12 @@ const Footer = () => {
           <Image src={logo} alt={'Tehnoplast logo'} fill objectFit='cover' />
         </div>
         <p>Proizvodnja i ugradnja ALU i PVC stolarije od 2001. godine </p>
-        <h4 className='email'>info@tehnoplast.co.rs </h4>
-        <h4 className='tele'>+ 381 66 455 253</h4>
+        <a href='#' className='email'>
+          info@tehnoplast.co.rs{' '}
+        </a>
+        <a href='#' className='tele'>
+          + 381 66 455 253
+        </a>
         <div className='socials'>
           <div className='s-icon insta' />
           <div className='s-icon face' />
