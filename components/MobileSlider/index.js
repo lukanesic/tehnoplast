@@ -6,6 +6,9 @@ import prozori from './../../public/images/prozori-hero.jpg'
 import vrata from './../../public/images/vrata-hero.jpg'
 import kapije from './../../public/images/ograda-hero.png'
 import pregrade from './../../public/images/pregrad-hero.jpg'
+import garazna from './../../public/images/garazna-hero-min.jpg'
+import roletne from './../../public/images/roletne-hero.jpg'
+import komarnici from './../../public/images/komarnici-hero.jpg'
 
 const data = [
   {
@@ -35,6 +38,27 @@ const data = [
     subtitle: 'Fiksni, rolo i plisirani',
     src: pregrade,
     alt: 'Tehnoplast Pregrade PVC i ALU',
+  },
+  {
+    id: 5,
+    title: 'Garazna vrata',
+    subtitle: 'Fiksni, rolo i plisirani',
+    src: garazna,
+    alt: 'Tehnoplast Garazna vrata PVC i ALU',
+  },
+  {
+    id: 6,
+    title: 'Roletne i kapaci',
+    subtitle: 'Fiksni, rolo i plisirani',
+    src: roletne,
+    alt: 'Tehnoplast Roletne i kapaci PVC i ALU',
+  },
+  {
+    id: 7,
+    title: 'Komarnici',
+    subtitle: 'Fiksni, rolo i plisirani',
+    src: komarnici,
+    alt: 'Tehnoplast Komarnici PVC i ALU',
   },
 ]
 
