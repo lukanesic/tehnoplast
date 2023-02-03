@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Dropback from '../components/Dropback'
+import Footer from '../components/Footer'
 
 import Logo from '../components/Logo'
 import Nav from '../components/Nav'
@@ -14,6 +15,7 @@ const MainLayout = ({ children }) => {
       <Sidemenu open={open} setOpen={setOpen} />
       <Nav open={open} setOpen={setOpen} />
       {children}
+      <Footer />
     </>
   )
 }

@@ -44,10 +44,8 @@ export default function Home() {
           heading={'Po Vasoj meri'}
           counterNum={'1000'}
           counterDescription={'zadovoljnih musterija'}
-          boldDescription={'Mi isporučujemo naše proizvode širom sveta.'}
-          description={
-            'Naši proizvodi se uvek isporučuju na način koji Vam je najpristupačniji i najkorisniji.'
-          }
+          boldDescription={'Naši proizvodi '}
+          description={'dolaze u bojama i dimenzijama koje vi izaberete.'}
         />
       </MainLayout>
     </>

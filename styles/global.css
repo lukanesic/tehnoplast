@@ -267,4 +267,74 @@ nav .normal-logo {
   height: 100%;
   object-fit: cover;
   -o-object-fit: cover;
+}
+
+footer .footer-container {
+  border-top: 1px solid rgba(57, 62, 66, 0.2117647059);
+  border-bottom: 1px solid rgba(57, 62, 66, 0.2117647059);
+  padding: 3rem 0;
+}
+footer .footer-container .normal-logo {
+  position: relative;
+  width: 150px;
+  height: 50px;
+}
+footer .footer-container p {
+  padding: 4rem 0;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  width: 90%;
+  line-height: 30px;
+  color: #393e42;
+}
+footer .footer-container h4 {
+  font-size: 26px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -1px;
+  font-weight: 500;
+  margin: 0.75rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #393e42;
+}
+footer .footer-container .email {
+  color: #f28c26;
+  border-bottom: 1px solid rgba(242, 140, 38, 0.5058823529);
+}
+footer .footer-container .socials {
+  display: flex;
+  align-items: center;
+  margin: 4rem 0 0rem;
+  display: none;
+}
+footer .footer-container .socials .s-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1.5rem;
+}
+footer .footer-container .socials .insta {
+  background: url("./../public/Insta.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .footer-container .socials .face {
+  background: url("./../public/face.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .copy-r {
+  padding: 1rem 0;
+}
+footer .copy-r h6 {
+  font-size: 14px;
+  padding: 0.5rem 0;
+  color: rgba(57, 62, 66, 0.6901960784);
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -0.5px;
+  font-weight: 400;
 }/*# sourceMappingURL=global.css.map */
