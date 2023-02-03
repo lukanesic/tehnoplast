@@ -17,6 +17,34 @@
       font-weight: 300;
       letter-spacing: -0.2px;
       line-height: 23px;
+
+      @include Pads() {
+        font-size: 18px;
+        width: 400px;
+        line-height: 26px;
+        letter-spacing: -0.4px;
+      }
+
+      @include PadsPro() {
+        font-size: 18px;
+        width: 400px;
+        line-height: 26px;
+        letter-spacing: -0.4px;
+      }
+
+      @include Laptops() {
+        font-size: 18px;
+        width: 500px;
+        line-height: 26px;
+        letter-spacing: -0.4px;
+      }
+
+      @include HiDPI() {
+        font-size: 18px;
+        width: 500px;
+        line-height: 26px;
+        letter-spacing: -0.4px;
+      }
     }
   }
 }

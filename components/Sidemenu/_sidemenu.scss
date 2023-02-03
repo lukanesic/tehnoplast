@@ -8,6 +8,22 @@
   z-index: 100;
   overflow: hidden;
 
+  @include Pads() {
+    width: 70vw;
+  }
+
+  @include PadsPro() {
+    width: 70vw;
+  }
+
+  @include Laptops() {
+    width: 700px;
+  }
+
+  @include HiDPI() {
+    width: 700px;
+  }
+
   .menu-container {
     height: 100%;
 

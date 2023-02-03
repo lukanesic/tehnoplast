@@ -7,6 +7,22 @@
     letter-spacing: -2px;
 
     font-weight: 500;
+
+    @include Pads() {
+      font-size: 50px;
+    }
+
+    @include PadsPro() {
+      font-size: 50px;
+    }
+
+    @include Laptops() {
+      font-size: 50px;
+    }
+
+    @include HiDPI() {
+      font-size: 50px;
+    }
   }
 
   .number-counter {
@@ -19,6 +35,22 @@
       font-size: 30px;
       margin-right: 1rem;
       font-weight: 600;
+
+      @include Pads() {
+        font-size: 40px;
+      }
+
+      @include PadsPro() {
+        font-size: 40px;
+      }
+
+      @include Laptops() {
+        font-size: 40px;
+      }
+
+      @include HiDPI() {
+        font-size: 40px;
+      }
     }
 
     span {
@@ -29,6 +61,22 @@
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @include Pads() {
+        font-size: 20px;
+      }
+
+      @include PadsPro() {
+        font-size: 20px;
+      }
+
+      @include Laptops() {
+        font-size: 20px;
+      }
+
+      @include HiDPI() {
+        font-size: 20px;
+      }
     }
   }
 
@@ -38,8 +86,32 @@
     font-weight: 500;
     color: #393e4278;
     letter-spacing: -1px;
-    width: 300px;
+    width: 350px;
     line-height: 24px;
+
+    @include Pads() {
+      font-size: 20px;
+      width: 400px;
+      line-height: 28px;
+    }
+
+    @include PadsPro() {
+      font-size: 20px;
+      width: 400px;
+      line-height: 28px;
+    }
+
+    @include Laptops() {
+      font-size: 20px;
+      width: 500px;
+      line-height: 28px;
+    }
+
+    @include HiDPI() {
+      font-size: 20px;
+      width: 500px;
+      line-height: 28px;
+    }
 
     span {
       font-weight: 500;

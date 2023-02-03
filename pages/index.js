@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Categories from '../components/Categories'
 import Hero from '../components/Hero'
 import MarketSection from '../components/MarketSection'
 import MobileSlider from '../components/MobileSlider'
@@ -28,6 +29,7 @@ export default function Home() {
         />
 
         <MobileSlider />
+        <Categories />
         <MarketSection
           heading={'Proizvodnja'}
           counterNum={'50'}

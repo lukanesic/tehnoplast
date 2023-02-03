@@ -1,4 +1,6 @@
 import React from 'react'
+import { animate } from 'framer-motion'
+import { useRef } from 'react'
 
 const MarketSection = ({
   heading,
