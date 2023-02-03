@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Hero from '../components/Hero'
 import MarketSection from '../components/MarketSection'
+import MobileSlider from '../components/MobileSlider'
 
 import MainLayout from '../layout/MainLayout'
 
@@ -24,6 +25,7 @@ export default function Home() {
             'je posvećena sofisticiranim proizvodima od pvc i alu najvišeg kvaliteta.'
           }
         />
+        <MobileSlider />
       </MainLayout>
     </>
   )
