@@ -6,6 +6,7 @@ import MainLayout from './../../layout/MainLayout'
 
 import prozori from './../../public/images/prozori-hero.jpg'
 import profil1 from './../../public/images/prozori-profili/iconic-1.jpg'
+import profil2 from './../../public/images/prozori-profili/iconic-2.png'
 
 const Prozori = () => {
   return (
@@ -45,7 +46,7 @@ const Prozori = () => {
       <Profili
         img={profil1}
         cls='profil'
-        topInfoNum={'01'}
+        topInfoNum={'02'}
         topInfoDesc={'Visekomorni PVC prozori'}
         title={'Iconic w77 AI².'}
         botInfoDesc={'U ponudi i drvo-dekor pvc prozori.'}
@@ -58,9 +59,9 @@ const Prozori = () => {
       />
 
       <Profili
-        img={profil1}
-        cls='profil'
-        topInfoNum={'01'}
+        img={profil2}
+        cls='profil reversed'
+        topInfoNum={'03'}
         topInfoDesc={'Visekomorni PVC prozori'}
         title={'Iconic w77 AI².'}
         botInfoDesc={'U ponudi i drvo-dekor pvc prozori.'}
@@ -69,6 +70,16 @@ const Prozori = () => {
         }
         description2={
           'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        }
+      />
+
+      <MarketSection
+        heading={'Zasto poslovati sa nama'}
+        counterNum={''}
+        counterDescription={''}
+        boldDescription={'Lorem ipsum dolor sit amet, '}
+        description={
+          'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         }
       />
     </MainLayout>

@@ -988,4 +988,39 @@ footer .copy-r h6 {
 }
 .profil .profil-info .profil-btn:hover {
   background-color: #f28c26;
+}
+
+@media (min-width: 735px) and (max-width: 1023px) {
+  .reversed {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .reversed {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .reversed {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 12rem;
+  }
+}
+@media (min-width: 1440px) {
+  .reversed {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 12rem;
+  }
 }/*# sourceMappingURL=global.css.map */

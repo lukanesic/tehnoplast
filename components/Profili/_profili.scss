@@ -213,3 +213,35 @@
     }
   }
 }
+
+.reversed {
+  @include Pads() {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @include PadsPro() {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include Laptops() {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 12rem;
+  }
+
+  @include HiDPI() {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 12rem;
+  }
+}
