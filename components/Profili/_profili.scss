@@ -1,0 +1,70 @@
+.profil {
+  margin: 2rem auto 8rem;
+  .profil-img {
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+    height: 300px;
+
+    margin: 0 auto;
+  }
+
+  .profil-info {
+    text-align: center;
+    margin-top: 1.5rem;
+
+    .top-profil-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        font-size: 14px;
+        font-family: 'Open Sans';
+      }
+
+      .profil-line {
+        width: 50px;
+        height: 1px;
+        background-color: #f28c26;
+        margin: 0 1rem;
+      }
+
+      .light {
+        font-weight: 200;
+      }
+
+      .semi {
+        font-weight: 500;
+      }
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      letter-spacing: -1.5px;
+      margin: 1.5rem 0;
+    }
+
+    .biger {
+      font-size: 16px;
+      font-family: 'Open Sans';
+      font-weight: 200;
+    }
+
+    p {
+      display: none;
+    }
+
+    .profil-btn {
+      margin: 2rem auto;
+      padding: 0.8rem 1rem;
+      background-color: #f28c26b9;
+      color: #fff;
+      width: 80%;
+      max-width: 250px;
+      border-radius: 5px;
+    }
+  }
+}

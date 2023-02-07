@@ -12,8 +12,9 @@ const MarketSection = ({
   return (
     <div className='market-section wrapper'>
       <h2 className='h2-heading'>{heading}</h2>
+
       <div className='number-counter'>
-        <h5>{counterNum}+</h5> <span>{counterDescription}</span>
+        <h5>{counterNum}</h5> <span>{counterDescription}</span>
       </div>
       <p>
         <span>{boldDescription}</span>

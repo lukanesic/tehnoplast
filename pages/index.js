@@ -20,7 +20,7 @@ export default function Home() {
         <Hero />
         <MarketSection
           heading={'Proizvodi'}
-          counterNum={'20'}
+          counterNum={'20+'}
           counterDescription={'godina iskustva'}
           boldDescription={'Naši proizvodi imaju široku primenu '}
           description={
@@ -32,7 +32,7 @@ export default function Home() {
         <Categories />
         <MarketSection
           heading={'Proizvodnja'}
-          counterNum={'50'}
+          counterNum={'50+'}
           counterDescription={'zaposlenih'}
           boldDescription={'Naša proizvodnja '}
           description={
@@ -44,8 +44,8 @@ export default function Home() {
 
         <MarketSection
           heading={'Po Vasoj meri'}
-          counterNum={'1000'}
-          counterDescription={'zadovoljnih musterija'}
+          counterNum={'1000+'}
+          counterDescription={'musterija'}
           boldDescription={'Naši proizvodi '}
           description={'dolaze u bojama i dimenzijama koje vi izaberete.'}
         />

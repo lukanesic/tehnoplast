@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Link from 'next/link'
 
 import Image from 'next/image'
 import logo from './../../public/images/tehnoplast-logo-dark.png'
@@ -52,7 +53,11 @@ const Sidemenu = ({ open, setOpen }) => {
               <ul className='small-menu'>
                 <div>
                   <h6 className='menu-heading'>Menu</h6>
-                  <li>Početna</li>
+                  <Link href={'/'}>
+                    {' '}
+                    <li>Početna</li>
+                  </Link>
+
                   <li>Referenca</li>
                   <li>O nama</li>
                   <li>Kontakt</li>
@@ -69,7 +74,11 @@ const Sidemenu = ({ open, setOpen }) => {
               </ul>
               <ul className='large-menu'>
                 <h6 className='menu-heading'>Proizvodi</h6>
-                <li>Prozori</li>
+                <Link href='/prozori'>
+                  {' '}
+                  <li>Prozori</li>
+                </Link>
+
                 <li>Vrata</li>
                 <li>Garazna vrata</li>
                 <li>Sanitarne pregrade</li>

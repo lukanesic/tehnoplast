@@ -17,11 +17,16 @@
   }
 
   @include Laptops() {
-    width: 700px;
+    width: 900px;
   }
 
   @include HiDPI() {
-    width: 700px;
+    width: 900px;
+  }
+
+  a {
+    text-decoration: none;
+    color: unset;
   }
 
   .menu-container {
@@ -45,6 +50,30 @@
       padding: 0 3rem;
 
       li {
+        list-style: none;
+        font-family: 'Inter', sans-serif;
+
+        color: #393e42;
+
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition: border-bottom 0.8s ease;
+        width: fit-content;
+      }
+
+      @include Laptops() {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      @include HiDPI() {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      li {
         font-size: 40px;
         margin: 1rem 0;
         letter-spacing: -2px;
@@ -52,11 +81,72 @@
         font-family: 'Inter', sans-serif;
         list-style-type: none;
         color: #393e42;
+
+        @include Laptops() {
+          font-size: 18px;
+          letter-spacing: -1px;
+          font-weight: 300;
+          color: #393e42;
+          margin: 1.5rem 0;
+        }
+
+        @include HiDPI() {
+          font-size: 18px;
+          letter-spacing: -1px;
+          font-weight: 300;
+          color: #393e42;
+          margin: 1.5rem 0;
+        }
       }
     }
 
     .large-menu {
       display: none;
+
+      li {
+        list-style: none;
+        font-family: 'Inter', sans-serif;
+
+        color: #393e42;
+
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition: border-bottom 0.8s ease;
+        width: fit-content;
+      }
+
+      @include Laptops() {
+        margin-left: 9rem;
+        display: block;
+
+        li {
+          font-size: 40px;
+          margin: 1.2rem 0;
+          letter-spacing: -2px;
+          font-weight: 500;
+        }
+      }
+
+      @include HiDPI() {
+        display: block;
+        margin-left: 9rem;
+
+        li {
+          font-size: 40px;
+          margin: 1.2rem 0;
+          letter-spacing: -2px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .two-menus {
+      display: flex;
+
+      li:hover {
+        border-bottom: 3px solid #f28c26;
+        cursor: pointer;
+      }
     }
 
     .menu-heading {
