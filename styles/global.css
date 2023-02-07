@@ -769,6 +769,36 @@ footer .copy-r h6 {
 .profil {
   margin: 2rem auto 8rem;
 }
+@media (min-width: 735px) and (max-width: 1023px) {
+  .profil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .profil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .profil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 12rem;
+  }
+}
+@media (min-width: 1440px) {
+  .profil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 12rem;
+  }
+}
 .profil .profil-img {
   position: relative;
   width: 90%;
@@ -776,24 +806,90 @@ footer .copy-r h6 {
   height: 300px;
   margin: 0 auto;
 }
+@media (min-width: 735px) and (max-width: 1023px) {
+  .profil .profil-img {
+    margin: unset;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .profil .profil-img {
+    margin: unset;
+    height: 400px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .profil .profil-img {
+    margin: unset;
+    height: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .profil .profil-img {
+    margin: unset;
+    height: 500px;
+  }
+}
 .profil .profil-info {
   text-align: center;
   margin-top: 1.5rem;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  .profil .profil-info {
+    margin: unset;
+    width: 400px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .profil .profil-info {
+    margin: unset;
+    width: 500px;
+    text-align: left;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .profil .profil-info {
+    margin: unset;
+    width: 500px;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .profil .profil-info {
+    margin: unset;
+    width: 500px;
+    text-align: left;
+  }
 }
 .profil .profil-info .top-profil-info {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .profil .profil-info .top-profil-info {
+    justify-content: start;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .profil .profil-info .top-profil-info {
+    justify-content: start;
+  }
+}
+@media (min-width: 1440px) {
+  .profil .profil-info .top-profil-info {
+    justify-content: start;
+  }
+}
 .profil .profil-info .top-profil-info span {
   font-size: 14px;
   font-family: "Open Sans";
+  color: #03070e;
 }
 .profil .profil-info .top-profil-info .profil-line {
   width: 50px;
   height: 1px;
   background-color: #f28c26;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 .profil .profil-info .top-profil-info .light {
   font-weight: 200;
@@ -807,14 +903,56 @@ footer .copy-r h6 {
   font-size: 30px;
   letter-spacing: -1.5px;
   margin: 1.5rem 0;
+  color: #03070e;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .profil .profil-info h3 {
+    text-align: left;
+    font-size: 40px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .profil .profil-info h3 {
+    text-align: left;
+    font-size: 45px;
+  }
+}
+@media (min-width: 1440px) {
+  .profil .profil-info h3 {
+    text-align: left;
+    font-size: 45px;
+  }
 }
 .profil .profil-info .biger {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Open Sans";
   font-weight: 200;
 }
 .profil .profil-info p {
   display: none;
+  margin: 2rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #03070e;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .profil .profil-info p {
+    display: block;
+    text-align: left;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .profil .profil-info p {
+    display: block;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .profil .profil-info p {
+    display: block;
+    text-align: left;
+  }
 }
 .profil .profil-info .profil-btn {
   margin: 2rem auto;
@@ -824,4 +962,30 @@ footer .copy-r h6 {
   width: 80%;
   max-width: 250px;
   border-radius: 5px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .profil .profil-info .profil-btn {
+    text-align: center;
+    margin: 2rem 0;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .profil .profil-info .profil-btn {
+    text-align: center;
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 1440px) {
+  .profil .profil-info .profil-btn {
+    text-align: center;
+    margin: 3rem 0;
+  }
+}
+.profil .profil-info .profil-btn:hover {
+  background-color: #f28c26;
 }/*# sourceMappingURL=global.css.map */
