@@ -63,7 +63,10 @@ const Sidemenu = ({ open, setOpen }) => {
                     {' '}
                     <li>O Nama</li>
                   </Link>
-                  <li>Kontakt</li>
+                  <Link href={'/kontakt'}>
+                    {' '}
+                    <li>Kontakt</li>
+                  </Link>
                 </div>
 
                 <div className='info'>

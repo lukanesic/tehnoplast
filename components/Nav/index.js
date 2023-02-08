@@ -2,14 +2,30 @@ import React from 'react'
 import Image from 'next/image'
 
 import logo from './../../public/images/tehnoplast-logo.png'
+import darklogo from './../../public/images/tehnoplast-logo-dark.png'
 import { Squeeze as Hamburger } from 'hamburger-react'
 
-const Nav = ({ open, setOpen }) => {
+const Nav = ({ open, setOpen, dark }) => {
   return (
     <nav>
       <div className='wrapper nav'>
         <div className='normal-logo'>
-          <Image src={logo} alt={'Tehnoplast logo'} fill objectFit='contain' />
+          {!dark && (
+            <Image
+              src={logo}
+              alt={'Tehnoplast logo'}
+              fill
+              objectFit='contain'
+            />
+          )}
+          {dark && (
+            <Image
+              src={darklogo}
+              alt={'Tehnoplast logo'}
+              fill
+              objectFit='contain'
+            />
+          )}
         </div>
         <div className='circle'>
           <Hamburger

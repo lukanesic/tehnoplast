@@ -5,7 +5,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     letter-spacing: -2px;
-
+    color: #393e42;
     font-weight: 500;
 
     @include Pads() {
@@ -35,6 +35,7 @@
       font-size: 30px;
       margin-right: 1rem;
       font-weight: 600;
+      color: #393e42;
 
       @include Pads() {
         font-size: 40px;

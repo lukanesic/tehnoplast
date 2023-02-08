@@ -7,11 +7,11 @@
   }
 
   @include Laptops() {
-    height: 100vh;
+    height: 600px;
   }
 
   @include HiDPI() {
-    height: 100vh;
+    height: 600px;
   }
 
   video {
