@@ -40,7 +40,7 @@ export default function Home() {
           }
         />
 
-        <VideoSection />
+        <VideoSection src={'images/video.mp4'} />
 
         <MarketSection
           heading={'Po Vasoj meri'}
