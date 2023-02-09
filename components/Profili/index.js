@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 const Profili = ({
   cls,
@@ -10,7 +11,9 @@ const Profili = ({
   botInfoDesc,
   description1,
   description2,
+  link,
 }) => {
+  const router = useRouter()
   return (
     <div className={`${cls} wrapper`}>
       <div className='profil-img'>
@@ -26,7 +29,9 @@ const Profili = ({
         <span className='biger'>{botInfoDesc}</span>
         <p>{description1}</p>
         <p>{description2}</p>
-        <div className='profil-btn'>Saznajte vise</div>
+        <div className='profil-btn' onClick={() => router.push(`${link}`)}>
+          Saznajte vise
+        </div>
       </div>
     </div>
   )

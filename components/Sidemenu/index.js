@@ -58,7 +58,7 @@ const Sidemenu = ({ open, setOpen }) => {
                     <li>Početna</li>
                   </Link>
 
-                  <li>Referenca</li>
+                  <li>Projekti</li>
                   <Link href={'/o-nama'}>
                     {' '}
                     <li>O Nama</li>

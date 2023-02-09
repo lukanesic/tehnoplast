@@ -185,7 +185,7 @@ body {
 }
 .kontakt-content h6 {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   letter-spacing: -1px;
   margin-bottom: 1rem;
   color: #393e42;
@@ -1019,7 +1019,7 @@ footer .copy-r h6 {
 @media (min-width: 1440px) {
   .profil .profil-img {
     margin: unset;
-    height: 500px;
+    height: 400px;
   }
 }
 .profil .profil-info {
@@ -1215,5 +1215,556 @@ footer .copy-r h6 {
     justify-content: space-between;
     align-items: center;
     margin: 2rem auto 12rem;
+  }
+}
+
+.p-top-section {
+  margin-top: 10rem;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  .p-top-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .p-top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .p-top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .p-top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.p-top-section .profil-img {
+  position: relative;
+  width: 90%;
+  max-width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  .p-top-section .profil-img {
+    margin: unset;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .p-top-section .profil-img {
+    margin: unset;
+    height: 400px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .p-top-section .profil-img {
+    margin: unset;
+    height: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .p-top-section .profil-img {
+    margin: unset;
+    height: 400px;
+  }
+}
+.p-top-section .profil-info {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  .p-top-section .profil-info {
+    margin: unset;
+    width: 400px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .p-top-section .profil-info {
+    margin: unset;
+    width: 500px;
+    text-align: left;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .p-top-section .profil-info {
+    margin: unset;
+    width: 500px;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .p-top-section .profil-info {
+    margin: unset;
+    width: 500px;
+    text-align: left;
+  }
+}
+.p-top-section .profil-info .top-profil-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .p-top-section .profil-info .top-profil-info {
+    justify-content: start;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .p-top-section .profil-info .top-profil-info {
+    justify-content: start;
+  }
+}
+@media (min-width: 1440px) {
+  .p-top-section .profil-info .top-profil-info {
+    justify-content: start;
+  }
+}
+.p-top-section .profil-info .top-profil-info span {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #03070e;
+}
+.p-top-section .profil-info .top-profil-info .profil-line {
+  width: 50px;
+  height: 1px;
+  background-color: #f28c26;
+  margin: 0 0.5rem;
+}
+.p-top-section .profil-info .top-profil-info .light {
+  font-weight: 200;
+}
+.p-top-section .profil-info .top-profil-info .semi {
+  font-weight: 500;
+}
+.p-top-section .profil-info h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: -1.5px;
+  margin: 1.5rem 0;
+  color: #03070e;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .p-top-section .profil-info h3 {
+    text-align: left;
+    font-size: 40px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .p-top-section .profil-info h3 {
+    text-align: left;
+    font-size: 45px;
+  }
+}
+@media (min-width: 1440px) {
+  .p-top-section .profil-info h3 {
+    text-align: left;
+    font-size: 45px;
+  }
+}
+.p-top-section .profil-info .biger {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 200;
+}
+.p-top-section .profil-info p {
+  display: none;
+  margin: 2rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #03070e;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .p-top-section .profil-info p {
+    display: block;
+    text-align: left;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .p-top-section .profil-info p {
+    display: block;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .p-top-section .profil-info p {
+    display: block;
+    text-align: left;
+  }
+}
+.p-top-section .profil-info .profil-btn {
+  margin: 2rem auto;
+  padding: 0.8rem 1rem;
+  background-color: rgba(242, 140, 38, 0.7254901961);
+  color: #fff;
+  width: 80%;
+  max-width: 250px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .p-top-section .profil-info .profil-btn {
+    text-align: center;
+    margin: 2rem 0;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .p-top-section .profil-info .profil-btn {
+    text-align: center;
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 1440px) {
+  .p-top-section .profil-info .profil-btn {
+    text-align: center;
+    margin: 3rem 0;
+  }
+}
+.p-top-section .profil-info .profil-btn:hover {
+  background-color: #f28c26;
+}
+
+.mid-section {
+  margin-top: 8rem;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  .mid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 1rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .mid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 2rem;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .mid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 2rem;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .mid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 2rem;
+    justify-content: space-between;
+  }
+}
+.mid-section .box {
+  margin-bottom: 8rem;
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .mid-section .box {
+    margin-bottom: unset;
+  }
+}
+@media (min-width: 1440px) {
+  .mid-section .box {
+    margin-bottom: unset;
+  }
+}
+.mid-section h6 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+  color: #393e42;
+  font-weight: 800;
+}
+.mid-section p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  color: #393e42;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.bot-section {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  .bot-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bot-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .bot-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .bot-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.bot-section .profil-bot-img {
+  position: relative;
+  width: 90%;
+  max-width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  .bot-section .profil-bot-img {
+    margin: unset;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bot-section .profil-bot-img {
+    margin: unset;
+    height: 400px;
+    width: 400px;
+    min-width: 400px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .bot-section .profil-bot-img {
+    margin: unset;
+    height: 400px;
+    width: 400px;
+    min-width: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .bot-section .profil-bot-img {
+    margin: unset;
+    height: 400px;
+    width: 400px;
+    min-width: 400px;
+  }
+}
+.bot-section .profil-info {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  .bot-section .profil-info {
+    margin: unset;
+    width: 400px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bot-section .profil-info {
+    margin: unset;
+    width: 500px;
+    text-align: left;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .bot-section .profil-info {
+    margin: unset;
+    width: 500px;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .bot-section .profil-info {
+    margin: unset;
+    width: 500px;
+    text-align: left;
+  }
+}
+.bot-section .profil-info .top-profil-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bot-section .profil-info .top-profil-info {
+    justify-content: start;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .bot-section .profil-info .top-profil-info {
+    justify-content: start;
+  }
+}
+@media (min-width: 1440px) {
+  .bot-section .profil-info .top-profil-info {
+    justify-content: start;
+  }
+}
+.bot-section .profil-info .top-profil-info span {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #03070e;
+}
+.bot-section .profil-info .top-profil-info .profil-line {
+  width: 50px;
+  height: 1px;
+  background-color: #f28c26;
+  margin: 0 0.5rem;
+}
+.bot-section .profil-info .top-profil-info .light {
+  font-weight: 200;
+}
+.bot-section .profil-info .top-profil-info .semi {
+  font-weight: 500;
+}
+.bot-section .profil-info h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: -1.5px;
+  margin: 1.5rem 0;
+  color: #03070e;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bot-section .profil-info h3 {
+    text-align: left;
+    font-size: 40px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .bot-section .profil-info h3 {
+    text-align: left;
+    font-size: 45px;
+  }
+}
+@media (min-width: 1440px) {
+  .bot-section .profil-info h3 {
+    text-align: left;
+    font-size: 45px;
+  }
+}
+.bot-section .profil-info .biger {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 200;
+}
+.bot-section .profil-info p {
+  margin: 2rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #03070e;
+  text-align: left;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  .bot-section .profil-info p {
+    width: 80%;
+    margin: 2rem auto;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bot-section .profil-info p {
+    text-align: left;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .bot-section .profil-info p {
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .bot-section .profil-info p {
+    text-align: left;
+  }
+}
+.bot-section .profil-info .profil-btn {
+  margin: 2rem auto;
+  padding: 0.8rem 1rem;
+  background-color: rgba(242, 140, 38, 0.7254901961);
+  color: #fff;
+  width: 80%;
+  max-width: 250px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bot-section .profil-info .profil-btn {
+    text-align: center;
+    margin: 2rem 0;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .bot-section .profil-info .profil-btn {
+    text-align: center;
+    margin: 3rem 0;
+  }
+}
+@media (min-width: 1440px) {
+  .bot-section .profil-info .profil-btn {
+    text-align: center;
+    margin: 3rem 0;
+  }
+}
+.bot-section .profil-info .profil-btn:hover {
+  background-color: #f28c26;
+}
+
+@media (min-width: 735px) and (max-width: 1023px) {
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
   }
 }/*# sourceMappingURL=global.css.map */

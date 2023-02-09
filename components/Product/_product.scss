@@ -1,0 +1,526 @@
+.p-top-section {
+  margin-top: 10rem;
+
+  @include Pads() {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @include PadsPro() {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include Laptops() {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include HiDPI() {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profil-img {
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+    height: 300px;
+
+    margin: 0 auto;
+
+    @include Pads() {
+      margin: unset;
+    }
+
+    @include PadsPro() {
+      margin: unset;
+      height: 400px;
+    }
+
+    @include Laptops() {
+      margin: unset;
+      height: 400px;
+    }
+
+    @include HiDPI() {
+      margin: unset;
+      height: 400px;
+    }
+  }
+
+  .profil-info {
+    text-align: center;
+    margin-top: 1.5rem;
+
+    @include Pads() {
+      margin: unset;
+      width: 400px;
+    }
+
+    @include PadsPro() {
+      margin: unset;
+      width: 500px;
+      text-align: left;
+    }
+
+    @include Laptops() {
+      margin: unset;
+      width: 500px;
+      text-align: left;
+    }
+
+    @include HiDPI() {
+      margin: unset;
+      width: 500px;
+      text-align: left;
+    }
+
+    .top-profil-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include PadsPro() {
+        justify-content: start;
+      }
+
+      @include Laptops() {
+        justify-content: start;
+      }
+
+      @include HiDPI() {
+        justify-content: start;
+      }
+
+      span {
+        font-size: 14px;
+        font-family: 'Open Sans';
+        color: #03070e;
+      }
+
+      .profil-line {
+        width: 50px;
+        height: 1px;
+        background-color: #f28c26;
+        margin: 0 0.5rem;
+      }
+
+      .light {
+        font-weight: 200;
+      }
+
+      .semi {
+        font-weight: 500;
+      }
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      letter-spacing: -1.5px;
+      margin: 1.5rem 0;
+      color: #03070e;
+
+      @include PadsPro() {
+        text-align: left;
+        font-size: 40px;
+      }
+
+      @include Laptops() {
+        text-align: left;
+        font-size: 45px;
+      }
+
+      @include HiDPI() {
+        text-align: left;
+        font-size: 45px;
+      }
+    }
+
+    .biger {
+      font-size: 14px;
+      font-family: 'Open Sans';
+      font-weight: 200;
+    }
+
+    p {
+      display: none;
+      margin: 2rem 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #03070e;
+
+      @include PadsPro() {
+        display: block;
+        text-align: left;
+      }
+
+      @include Laptops() {
+        display: block;
+        text-align: left;
+      }
+
+      @include HiDPI() {
+        display: block;
+        text-align: left;
+      }
+    }
+
+    .profil-btn {
+      margin: 2rem auto;
+      padding: 0.8rem 1rem;
+      background-color: #f28c26b9;
+      color: #fff;
+      width: 80%;
+      max-width: 250px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-family: 'Open Sans';
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.5s ease;
+
+      @include PadsPro() {
+        text-align: center;
+        margin: 2rem 0;
+      }
+      @include Laptops() {
+        text-align: center;
+        margin: 3rem 0;
+      }
+
+      @include HiDPI() {
+        text-align: center;
+        margin: 3rem 0;
+      }
+    }
+
+    .profil-btn:hover {
+      background-color: #f28c26;
+    }
+  }
+}
+
+.mid-section {
+  margin-top: 8rem;
+
+  @include Pads() {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 1rem;
+  }
+
+  @include PadsPro() {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 2rem;
+    justify-content: space-between;
+  }
+
+  @include Laptops() {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 2rem;
+    justify-content: space-between;
+  }
+
+  @include HiDPI() {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .box {
+    margin-bottom: 8rem;
+
+    @include Laptops() {
+      margin-bottom: unset;
+    }
+
+    @include HiDPI() {
+      margin-bottom: unset;
+    }
+  }
+
+  h6 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+    color: #393e42;
+    font-weight: 800;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    color: #393e42;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+}
+
+.bot-section {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+  @include Pads() {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @include PadsPro() {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include Laptops() {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include HiDPI() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profil-bot-img {
+    position: relative;
+    width: 90%;
+    max-width: 300px;
+    height: 300px;
+
+    margin: 0 auto;
+
+    @include Pads() {
+      margin: unset;
+    }
+
+    @include PadsPro() {
+      margin: unset;
+      height: 400px;
+      width: 400px;
+      min-width: 400px;
+    }
+
+    @include Laptops() {
+      margin: unset;
+      height: 400px;
+      width: 400px;
+      min-width: 400px;
+    }
+
+    @include HiDPI() {
+      margin: unset;
+      height: 400px;
+      width: 400px;
+      min-width: 400px;
+    }
+  }
+
+  .profil-info {
+    text-align: center;
+    margin-top: 1.5rem;
+
+    @include Pads() {
+      margin: unset;
+      width: 400px;
+    }
+
+    @include PadsPro() {
+      margin: unset;
+      width: 500px;
+      text-align: left;
+    }
+
+    @include Laptops() {
+      margin: unset;
+      width: 500px;
+      text-align: left;
+    }
+
+    @include HiDPI() {
+      margin: unset;
+      width: 500px;
+      text-align: left;
+    }
+
+    .top-profil-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include PadsPro() {
+        justify-content: start;
+      }
+
+      @include Laptops() {
+        justify-content: start;
+      }
+
+      @include HiDPI() {
+        justify-content: start;
+      }
+
+      span {
+        font-size: 14px;
+        font-family: 'Open Sans';
+        color: #03070e;
+      }
+
+      .profil-line {
+        width: 50px;
+        height: 1px;
+        background-color: #f28c26;
+        margin: 0 0.5rem;
+      }
+
+      .light {
+        font-weight: 200;
+      }
+
+      .semi {
+        font-weight: 500;
+      }
+    }
+
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      letter-spacing: -1.5px;
+      margin: 1.5rem 0;
+      color: #03070e;
+
+      @include PadsPro() {
+        text-align: left;
+        font-size: 40px;
+      }
+
+      @include Laptops() {
+        text-align: left;
+        font-size: 45px;
+      }
+
+      @include HiDPI() {
+        text-align: left;
+        font-size: 45px;
+      }
+    }
+
+    .biger {
+      font-size: 14px;
+      font-family: 'Open Sans';
+      font-weight: 200;
+    }
+
+    p {
+      margin: 2rem 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #03070e;
+      text-align: left;
+
+      @include Pads() {
+        width: 80%;
+        margin: 2rem auto;
+      }
+
+      @include PadsPro() {
+        text-align: left;
+      }
+
+      @include Laptops() {
+        text-align: left;
+      }
+
+      @include HiDPI() {
+        text-align: left;
+      }
+    }
+
+    .profil-btn {
+      margin: 2rem auto;
+      padding: 0.8rem 1rem;
+      background-color: #f28c26b9;
+      color: #fff;
+      width: 80%;
+      max-width: 250px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-family: 'Open Sans';
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.5s ease;
+
+      @include PadsPro() {
+        text-align: center;
+        margin: 2rem 0;
+      }
+      @include Laptops() {
+        text-align: center;
+        margin: 3rem 0;
+      }
+
+      @include HiDPI() {
+        text-align: center;
+        margin: 3rem 0;
+      }
+    }
+
+    .profil-btn:hover {
+      background-color: #f28c26;
+    }
+  }
+}
+
+.reverse {
+  @include Pads() {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @include PadsPro() {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include Laptops() {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include HiDPI() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}

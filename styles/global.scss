@@ -176,7 +176,7 @@ body {
 
   h6 {
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: -1px;
     margin-bottom: 1rem;
     color: #393e42;
@@ -251,3 +251,5 @@ body {
 @import './../components/Categories/categories';
 @import './../components/CategoryHero/categoryhero';
 @import './../components/Profili/profili';
+
+@import './../components/Product/product';
