@@ -6,10 +6,6 @@ nav {
   width: 100%;
 
   .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     .circle {
       background-color: #e5853b9c;
       border-radius: 50%;
@@ -17,8 +13,17 @@ nav {
       transition: background 0.5s ease;
       z-index: 110;
       position: fixed;
-      top: 0.8rem;
-      right: 1rem;
+      top: 1.2rem;
+      right: 4%;
+      width: 75px;
+      height: 75px;
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+
+      @include HiDPI() {
+        right: 8%;
+      }
     }
 
     .circle:hover {
@@ -27,8 +32,14 @@ nav {
   }
 
   .normal-logo {
-    position: relative;
-    width: 150px;
-    height: 70px;
+    width: 200px;
+    height: 90px;
+    position: absolute;
+    top: 0.6rem;
+    left: 4%;
+
+    @include HiDPI() {
+      left: 8%;
+    }
   }
 }

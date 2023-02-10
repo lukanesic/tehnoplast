@@ -27,11 +27,11 @@ const Nav = ({ open, setOpen, dark }) => {
             />
           )}
         </div>
-        <div className='circle'>
+        <div className='circle' onClick={() => setOpen(!open)}>
           <Hamburger
             toggled={open}
             toggle={setOpen}
-            size={18}
+            size={22}
             hideOutline={false}
             color='#fff'
           />

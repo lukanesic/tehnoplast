@@ -453,11 +453,6 @@ nav {
   left: 0;
   width: 100%;
 }
-nav .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 nav .nav .circle {
   background-color: rgba(229, 133, 59, 0.6117647059);
   border-radius: 50%;
@@ -465,16 +460,33 @@ nav .nav .circle {
   transition: background 0.5s ease;
   z-index: 110;
   position: fixed;
-  top: 0.8rem;
-  right: 1rem;
+  top: 1.2rem;
+  right: 4%;
+  width: 75px;
+  height: 75px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+@media (min-width: 1440px) {
+  nav .nav .circle {
+    right: 8%;
+  }
 }
 nav .nav .circle:hover {
   background-color: rgba(229, 133, 59, 0.8901960784);
 }
 nav .normal-logo {
-  position: relative;
-  width: 150px;
-  height: 70px;
+  width: 200px;
+  height: 90px;
+  position: absolute;
+  top: 0.6rem;
+  left: 4%;
+}
+@media (min-width: 1440px) {
+  nav .normal-logo {
+    left: 8%;
+  }
 }
 
 .hero {
