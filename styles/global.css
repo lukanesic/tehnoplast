@@ -1487,11 +1487,22 @@ footer .copy-r h6 {
     margin-bottom: unset;
   }
 }
+.mid-section .box ul li {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  margin: 0.5rem 0;
+}
+.mid-section .box ul li span {
+  font-weight: 300;
+}
 .mid-section h6 {
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   letter-spacing: -1px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: #393e42;
   font-weight: 800;
 }
@@ -1678,6 +1689,8 @@ footer .copy-r h6 {
   font-weight: 400;
   color: #03070e;
   text-align: left;
+  letter-spacing: -0.2px;
+  line-height: 26px;
 }
 @media (min-width: 735px) and (max-width: 1023px) {
   .bot-section .profil-info p {
