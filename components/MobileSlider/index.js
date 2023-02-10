@@ -10,6 +10,8 @@ import garazna from './../../public/images/garazna-hero.jpg'
 import roletne from './../../public/images/roletne-hero.jpg'
 import komarnici from './../../public/images/komarnici-hero.jpg'
 
+import { useRouter } from 'next/router'
+
 const data = [
   {
     id: 1,
@@ -17,6 +19,7 @@ const data = [
     subtitle: 'Fiksni, rolo i plisirani',
     src: prozori,
     alt: 'Tehnoplast Prozori PVC i ALU',
+    link: '/prozori',
   },
   {
     id: 2,
@@ -24,35 +27,39 @@ const data = [
     subtitle: 'Ulazna, sobna i klizna',
     src: vrata,
     alt: 'Tehnoplast Vrata PVC i ALU',
+    link: '/vrata',
   },
   {
     id: 3,
+    title: 'Garazna vrata',
+    subtitle: 'Fiksni, rolo i plisirani',
+    src: garazna,
+    alt: 'Tehnoplast Garazna vrata PVC i ALU',
+    link: '/garazna-vrata',
+  },
+  {
+    id: 4,
+    title: 'Roletne i kapaci',
+    subtitle: 'Fiksni, rolo i plisirani',
+    src: roletne,
+    alt: 'Tehnoplast Roletne i kapaci PVC i ALU',
+    link: '/roletne',
+  },
+  {
+    id: 5,
     title: 'Kapije',
     subtitle: 'Ograde, gelenderi i',
     src: kapije,
     alt: 'Tehnoplast Ograde, Gelenderi i Kapije PVC i ALU',
   },
   {
-    id: 4,
+    id: 6,
     title: 'Sanitarne pregrade',
     subtitle: 'Fiksni, rolo i plisirani',
     src: pregrade,
     alt: 'Tehnoplast Pregrade PVC i ALU',
   },
-  {
-    id: 5,
-    title: 'Garazna vrata',
-    subtitle: 'Fiksni, rolo i plisirani',
-    src: garazna,
-    alt: 'Tehnoplast Garazna vrata PVC i ALU',
-  },
-  {
-    id: 6,
-    title: 'Roletne i kapaci',
-    subtitle: 'Fiksni, rolo i plisirani',
-    src: roletne,
-    alt: 'Tehnoplast Roletne i kapaci PVC i ALU',
-  },
+
   {
     id: 7,
     title: 'Komarnici',
@@ -83,6 +90,7 @@ const MobileSlider = () => {
           subtitle={category.subtitle}
           src={category.src}
           alt={category.alt}
+          link={category.link}
         />
       ))}
     </div>
@@ -91,10 +99,11 @@ const MobileSlider = () => {
 
 export default MobileSlider
 
-const SliderCard = ({ src, alt, title, subtitle }) => {
+const SliderCard = ({ src, alt, title, subtitle, link }) => {
+  const router = useRouter()
   return (
     <div className='slider-card'>
-      <div className='slider-img'>
+      <div className='slider-img' onClick={() => router.push(link)}>
         <Image
           src={src}
           alt={alt}
@@ -106,7 +115,9 @@ const SliderCard = ({ src, alt, title, subtitle }) => {
       <div className='slider-info'>
         <h6>{subtitle}</h6>
         <h2>{title}</h2>
-        <div className='btn'>Pogledajte nase radove</div>
+        <div className='btn' onClick={() => router.push(link)}>
+          Pogledajte nase radove
+        </div>
         <div className='underline'></div>
       </div>
     </div>

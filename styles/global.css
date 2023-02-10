@@ -489,30 +489,74 @@ nav .nav .circle {
   position: fixed;
   top: 1.2rem;
   right: 4%;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   display: grid;
   place-content: center;
   cursor: pointer;
 }
+@media (min-width: 735px) and (max-width: 1023px) {
+  nav .nav .circle {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  nav .nav .circle {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  nav .nav .circle {
+    width: 75px;
+    height: 75px;
+  }
+}
 @media (min-width: 1440px) {
   nav .nav .circle {
     right: 4%;
+    width: 75px;
+    height: 75px;
   }
 }
 nav .nav .circle:hover {
   background-color: rgba(229, 133, 59, 0.8901960784);
 }
 nav .normal-logo {
-  width: 200px;
-  height: 90px;
+  width: 150px;
+  height: 50px;
   position: absolute;
-  top: 0.6rem;
+  top: 1rem;
   left: 4%;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  nav .normal-logo {
+    width: 200px;
+    height: 90px;
+    top: 0.6rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  nav .normal-logo {
+    width: 200px;
+    height: 90px;
+    top: 0.6rem;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  nav .normal-logo {
+    width: 200px;
+    height: 90px;
+    top: 0.6rem;
+  }
 }
 @media (min-width: 1440px) {
   nav .normal-logo {
     left: 4%;
+    width: 200px;
+    height: 90px;
+    top: 0.6rem;
   }
 }
 
