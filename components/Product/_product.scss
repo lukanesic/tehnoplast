@@ -217,33 +217,33 @@
 
   @include Pads() {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, auto);
     grid-gap: 1rem;
   }
 
   @include PadsPro() {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 2rem;
     justify-content: space-between;
   }
 
   @include Laptops() {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 2rem;
     justify-content: space-between;
   }
 
   @include HiDPI() {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 2rem;
     justify-content: space-between;
   }
 
   .box {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 
     @include Laptops() {
       margin-bottom: unset;
@@ -257,8 +257,8 @@
       li {
         list-style: none;
         font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        font-size: 18px;
+        font-weight: 400;
+        font-size: 16px;
         letter-spacing: -0.5px;
         margin: 0.5rem 0;
 
@@ -271,11 +271,27 @@
 
   h6 {
     font-family: 'Inter', sans-serif;
-    font-size: 30px;
+    font-size: 22px;
     letter-spacing: -1px;
     margin-bottom: 1.5rem;
     color: #393e42;
     font-weight: 800;
+
+    @include Pads() {
+      font-size: 30px;
+    }
+
+    @include PadsPro() {
+      font-size: 30px;
+    }
+
+    @include Laptops() {
+      font-size: 30px;
+    }
+
+    @include HiDPI() {
+      font-size: 30px;
+    }
   }
 
   p {
@@ -455,7 +471,7 @@
       font-size: 16px;
       font-weight: 400;
       color: #03070e;
-      text-align: left;
+      text-align: center;
 
       letter-spacing: -0.2px;
       line-height: 26px;
@@ -463,6 +479,7 @@
       @include Pads() {
         width: 80%;
         margin: 2rem auto;
+        text-align: left;
       }
 
       @include PadsPro() {

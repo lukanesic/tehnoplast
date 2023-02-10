@@ -1446,14 +1446,14 @@ footer .copy-r h6 {
 @media (min-width: 735px) and (max-width: 1023px) {
   .mid-section {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, auto);
     grid-gap: 1rem;
   }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .mid-section {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 2rem;
     justify-content: space-between;
   }
@@ -1461,7 +1461,7 @@ footer .copy-r h6 {
 @media (min-width: 1280px) and (max-width: 1439px) {
   .mid-section {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 2rem;
     justify-content: space-between;
   }
@@ -1469,13 +1469,13 @@ footer .copy-r h6 {
 @media (min-width: 1440px) {
   .mid-section {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 2rem;
     justify-content: space-between;
   }
 }
 .mid-section .box {
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 @media (min-width: 1280px) and (max-width: 1439px) {
   .mid-section .box {
@@ -1490,8 +1490,8 @@ footer .copy-r h6 {
 .mid-section .box ul li {
   list-style: none;
   font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: -0.5px;
   margin: 0.5rem 0;
 }
@@ -1500,11 +1500,31 @@ footer .copy-r h6 {
 }
 .mid-section h6 {
   font-family: "Inter", sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   letter-spacing: -1px;
   margin-bottom: 1.5rem;
   color: #393e42;
   font-weight: 800;
+}
+@media (min-width: 735px) and (max-width: 1023px) {
+  .mid-section h6 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .mid-section h6 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .mid-section h6 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .mid-section h6 {
+    font-size: 30px;
+  }
 }
 .mid-section p {
   font-family: "Open Sans", sans-serif;
@@ -1688,7 +1708,7 @@ footer .copy-r h6 {
   font-size: 16px;
   font-weight: 400;
   color: #03070e;
-  text-align: left;
+  text-align: center;
   letter-spacing: -0.2px;
   line-height: 26px;
 }
@@ -1696,6 +1716,7 @@ footer .copy-r h6 {
   .bot-section .profil-info p {
     width: 80%;
     margin: 2rem auto;
+    text-align: left;
   }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
