@@ -27,6 +27,11 @@ const Nav = ({ open, setOpen, dark }) => {
             />
           )}
         </div>
+
+        <div className='select-lang'>
+          <span> SRB</span>
+        </div>
+
         <div className='circle' onClick={() => setOpen(!open)}>
           <Hamburger
             toggled={open}

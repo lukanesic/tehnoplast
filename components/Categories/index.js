@@ -9,6 +9,8 @@ import roletne from './../../public/images/roletne-hero.jpg'
 import komarnici from './../../public/images/komarnici-hero.jpg'
 import Image from 'next/image'
 
+import { useRouter } from 'next/router'
+
 const data = [
   {
     id: 1,
@@ -62,23 +64,32 @@ const data = [
 ]
 
 const Categories = () => {
+  const router = useRouter()
+
   return (
     <div className='categories wrapper'>
       <div className='full'>
         <div className='slider-card'>
-          <div className='slider-img full-img'>
+          <div
+            className='slider-img full-img'
+            onClick={() => router.push('/prozori')}
+          >
+            <div className='overlay' />
             <Image
               src={prozori}
               alt={'Prozori Tehnoplast'}
               layout='fill'
               objectPosition='center'
               objectFit='cover'
+              style={{ zIndex: '-10' }}
             />
           </div>
           <div className='slider-info'>
             <h6>Fiksni, rolo i plisirani</h6>
             <h2>Prozori</h2>
-            <div className='btn'>Pogledajte nase radove</div>
+            <div className='btn' onClick={() => router.push('/prozori')}>
+              Pogledajte nase radove
+            </div>
             <div className='underline'></div>
           </div>
         </div>
@@ -87,12 +98,14 @@ const Categories = () => {
       <div className='divide-4'>
         <div className='slider-card'>
           <div className='slider-img'>
+            <div className='overlay' />
             <Image
               src={kapije}
               alt={'Tehnoplast Kapije'}
               layout='fill'
               objectPosition='center'
               objectFit='cover'
+              style={{ zIndex: '-10' }}
             />
           </div>
           <div className='slider-info'>
@@ -105,12 +118,14 @@ const Categories = () => {
 
         <div className='slider-card'>
           <div className='slider-img'>
+            <div className='overlay' />
             <Image
               src={roletne}
               alt={'Roletne Tehnoplast'}
               layout='fill'
               objectPosition='center'
               objectFit='cover'
+              style={{ zIndex: '-10' }}
             />
           </div>
           <div className='slider-info'>
@@ -123,12 +138,14 @@ const Categories = () => {
 
         <div className='slider-card'>
           <div className='slider-img'>
+            <div className='overlay' />
             <Image
               src={pregrade}
               alt={'Sanitarne pregrade Tehnoplast'}
               layout='fill'
               objectPosition='center'
               objectFit='cover'
+              style={{ zIndex: '-10' }}
             />
           </div>
           <div className='slider-info'>
@@ -141,12 +158,14 @@ const Categories = () => {
 
         <div className='slider-card'>
           <div className='slider-img'>
+            <div className='overlay' />
             <Image
               src={komarnici}
               alt={'Komarnici Tehnoplast'}
               layout='fill'
               objectPosition='center'
               objectFit='cover'
+              style={{ zIndex: '-10' }}
             />
           </div>
           <div className='slider-info'>
@@ -161,12 +180,14 @@ const Categories = () => {
       <div className='divide-2'>
         <div className='slider-card'>
           <div className='slider-img half'>
+            <div className='overlay' />
             <Image
               src={vrata}
               alt={'Vrata Tehnoplast'}
               layout='fill'
               objectPosition='center'
               objectFit='cover'
+              style={{ zIndex: '-10' }}
             />
           </div>
           <div className='slider-info'>
@@ -178,12 +199,14 @@ const Categories = () => {
         </div>
         <div className='slider-card'>
           <div className='slider-img half'>
+            <div className='overlay' />
             <Image
               src={garazna}
               alt={'Garazna vrata Tehnoplast'}
               layout='fill'
               objectPosition='center'
               objectFit='cover'
+              style={{ zIndex: '-10' }}
             />
           </div>
           <div className='slider-info'>

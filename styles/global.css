@@ -453,6 +453,29 @@ nav {
   left: 0;
   width: 100%;
 }
+nav .nav .select-lang {
+  position: absolute;
+  top: 2.7rem;
+  right: 25%;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  display: none;
+}
+@media (min-width: 1440px) {
+  nav .nav .select-lang {
+    right: 15%;
+  }
+}
+nav .nav .select-lang span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: -0.4px;
+  font-size: 18px;
+  cursor: pointer;
+}
 nav .nav .circle {
   background-color: rgba(229, 133, 59, 0.6117647059);
   border-radius: 50%;
@@ -470,7 +493,7 @@ nav .nav .circle {
 }
 @media (min-width: 1440px) {
   nav .nav .circle {
-    right: 8%;
+    right: 4%;
   }
 }
 nav .nav .circle:hover {
@@ -485,7 +508,7 @@ nav .normal-logo {
 }
 @media (min-width: 1440px) {
   nav .normal-logo {
-    left: 8%;
+    left: 4%;
   }
 }
 
@@ -858,6 +881,17 @@ footer .copy-r h6 {
   position: relative;
   width: 100%;
   height: 250px;
+  cursor: pointer;
+}
+.categories .slider-card .slider-img .overlay {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transition: background 0.5s ease;
+}
+.categories .slider-card .slider-img:hover > .overlay {
+  background-color: rgba(0, 0, 0, 0.262745098);
 }
 .categories .slider-card .full-img {
   height: 400px;
@@ -886,11 +920,18 @@ footer .copy-r h6 {
   color: #393e42;
   font-weight: 200;
   margin: 1rem 0 0.5rem;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.categories .slider-card .slider-info .btn:hover ~ .underline {
+  width: 150px;
 }
 .categories .slider-card .slider-info .underline {
   height: 1px;
   background-color: #393e42;
   width: 60px;
+  transition: width 0.5s ease;
 }
 .categories .divide-4 {
   display: grid;
