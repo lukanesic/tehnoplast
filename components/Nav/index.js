@@ -29,7 +29,7 @@ const Nav = ({ open, setOpen, dark }) => {
         </div>
 
         <div className='select-lang'>
-          <span> SRB</span>
+          <span>Jezik: SRB</span>
         </div>
 
         <div className='circle' onClick={() => setOpen(!open)}>

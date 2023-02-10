@@ -85,10 +85,20 @@ const Sidemenu = ({ open, setOpen }) => {
                   <li>Prozori</li>
                 </Link>
 
-                <li>Vrata</li>
-                <li>Garazna vrata</li>
+                <Link href='/vrata'>
+                  {' '}
+                  <li>Vrata</li>
+                </Link>
+                <Link href='/garazna-vrata'>
+                  {' '}
+                  <li>Garazna vrata</li>
+                </Link>
+
+                <Link href='/roletne'>
+                  {' '}
+                  <li>Roletne</li>
+                </Link>
                 <li>Sanitarne pregrade</li>
-                <li>Roletne</li>
                 <li>Kapije i ograde</li>
                 <li>Komarnici</li>
                 <li>Trakaste zavese</li>

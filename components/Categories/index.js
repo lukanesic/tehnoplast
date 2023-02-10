@@ -4,7 +4,7 @@ import prozori from './../../public/images/prozori-hero.jpg'
 import vrata from './../../public/images/vrata-hero.jpg'
 import kapije from './../../public/images/ograda-hero.png'
 import pregrade from './../../public/images/pregrad-hero.jpg'
-import garazna from './../../public/images/garazna-hero-min.jpg'
+import garazna from './../../public/images/garazna-hero.jpg'
 import roletne from './../../public/images/roletne-hero.jpg'
 import komarnici from './../../public/images/komarnici-hero.jpg'
 import Image from 'next/image'
@@ -117,7 +117,7 @@ const Categories = () => {
         </div>
 
         <div className='slider-card'>
-          <div className='slider-img'>
+          <div className='slider-img' onClick={() => router.push('/roletne')}>
             <div className='overlay' />
             <Image
               src={roletne}
@@ -131,7 +131,9 @@ const Categories = () => {
           <div className='slider-info'>
             <h6>Fiksni, rolo i plisirani</h6>
             <h2>Roletne i kapaci</h2>
-            <div className='btn'>Pogledajte nase radove</div>
+            <div className='btn' onClick={() => router.push('/roletne')}>
+              Pogledajte nase radove
+            </div>
             <div className='underline'></div>
           </div>
         </div>
@@ -178,7 +180,7 @@ const Categories = () => {
       </div>
 
       <div className='divide-2'>
-        <div className='slider-card'>
+        <div className='slider-card' onClick={() => router.push('/vrata')}>
           <div className='slider-img half'>
             <div className='overlay' />
             <Image
@@ -193,12 +195,17 @@ const Categories = () => {
           <div className='slider-info'>
             <h6>Ulazna, sobna i klizna</h6>
             <h2>Vrata</h2>
-            <div className='btn'>Pogledajte nase radove</div>
+            <div className='btn' onClick={() => router.push('/vrata')}>
+              Pogledajte nase radove
+            </div>
             <div className='underline'></div>
           </div>
         </div>
         <div className='slider-card'>
-          <div className='slider-img half'>
+          <div
+            className='slider-img half'
+            onClick={() => router.push('/garazna-vrata')}
+          >
             <div className='overlay' />
             <Image
               src={garazna}
@@ -212,7 +219,9 @@ const Categories = () => {
           <div className='slider-info'>
             <h6>Ograde, gelenderi i </h6>
             <h2>Garazna vrata</h2>
-            <div className='btn'>Pogledajte nase radove</div>
+            <div className='btn' onClick={() => router.push('/garazna-vrata')}>
+              Pogledajte nase radove
+            </div>
             <div className='underline'></div>
           </div>
         </div>

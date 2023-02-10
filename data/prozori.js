@@ -69,7 +69,7 @@ export const prozori = [
       'Ovakvi detalji ispunjavaju najviše zahteve u pogledu izdržljivosti. Kako vreme bude stavljalo ovaj profil na test, uživaćete u njegovoj izdržljivosti i prednostima.',
   },
   {
-    id: 1,
+    id: 2,
     profil: profil2,
     thermo: profil1thermo,
     duration: profil1duration,

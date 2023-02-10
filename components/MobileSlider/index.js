@@ -6,7 +6,7 @@ import prozori from './../../public/images/prozori-hero.jpg'
 import vrata from './../../public/images/vrata-hero.jpg'
 import kapije from './../../public/images/ograda-hero.png'
 import pregrade from './../../public/images/pregrad-hero.jpg'
-import garazna from './../../public/images/garazna-hero-min.jpg'
+import garazna from './../../public/images/garazna-hero.jpg'
 import roletne from './../../public/images/roletne-hero.jpg'
 import komarnici from './../../public/images/komarnici-hero.jpg'
 
