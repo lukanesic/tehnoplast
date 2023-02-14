@@ -3,6 +3,22 @@
   height: 100vh;
   position: relative;
 
+  @include Pads() {
+    height: 700px;
+  }
+
+  @include PadsPro() {
+    height: 700px;
+  }
+
+  @include Laptops() {
+    height: 700px;
+  }
+
+  @include HiDPI() {
+    height: 900px;
+  }
+
   .hero-info {
     height: 100%;
     display: flex;

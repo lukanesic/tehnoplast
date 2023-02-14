@@ -565,6 +565,26 @@ nav .normal-logo {
   height: 100vh;
   position: relative;
 }
+@media (min-width: 735px) and (max-width: 1023px) {
+  .hero {
+    height: 700px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hero {
+    height: 700px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .hero {
+    height: 700px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    height: 900px;
+  }
+}
 .hero .hero-info {
   height: 100%;
   display: flex;
