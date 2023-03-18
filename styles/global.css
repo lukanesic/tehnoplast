@@ -923,6 +923,10 @@ footer .copy-r h6 {
   letter-spacing: -0.5px;
   font-weight: 400;
 }
+footer .copy-r span {
+  font-weight: 600;
+  color: #000;
+}
 
 .categories {
   display: none;

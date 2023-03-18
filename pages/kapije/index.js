@@ -4,21 +4,21 @@ import CategoryHero from '../../components/CategoryHero'
 import MarketSection from '../../components/MarketSection'
 import MainLayout from '../../layout/MainLayout'
 
-import roletnehero from './../../public/images/roletne-hero.jpg'
-import test1 from './../../public/images/test1.jpg'
-import test2 from './../../public/images/test2.jpg'
-import test3 from './../../public/images/test3.jpg'
-import test4 from './../../public/images/test4.jpg'
-import test5 from './../../public/images/test5.png'
-import test6 from './../../public/images/test6.jpg'
+import ograda from './../../public/images/ograda-hero.png'
+import test1 from './../../public/images/kapije/test1.png'
+import test2 from './../../public/images/kapije/test2.png'
+import test3 from './../../public/images/kapije/test3.png'
+import test4 from './../../public/images/kapije/test4.png'
+import test5 from './../../public/images/kapije/test5.png'
+import test6 from './../../public/images/kapije/test6.png'
 
-const Roletne = () => {
+const Kapije = () => {
   return (
     <MainLayout>
       <CategoryHero
-        title={'Roletne i kapaci'}
+        title={'Kapije i ograde'}
         description={'Tehnoplast, Lapovo'}
-        img={roletnehero}
+        img={ograda}
       />
 
       <MarketSection
@@ -108,4 +108,4 @@ const Roletne = () => {
   )
 }
 
-export default Roletne
+export default Kapije

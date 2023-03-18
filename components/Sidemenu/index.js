@@ -58,7 +58,6 @@ const Sidemenu = ({ open, setOpen }) => {
                     <li>Početna</li>
                   </Link>
 
-                  <li>Projekti</li>
                   <Link href={'/o-nama'}>
                     {' '}
                     <li>O Nama</li>
@@ -70,11 +69,11 @@ const Sidemenu = ({ open, setOpen }) => {
                 </div>
 
                 <div className='info'>
-                  <a href='#' className='email'>
+                  <a className='email' href='mailto:info@tehnoplast.co.rs'>
                     info@tehnoplast.co.rs
                   </a>
-                  <a href='#' className='phone'>
-                    +381 66 653 635
+                  <a href='tel:+38162466555' className='phone'>
+                    +381 62 466 555
                   </a>
                 </div>
               </ul>
@@ -98,10 +97,18 @@ const Sidemenu = ({ open, setOpen }) => {
                   {' '}
                   <li>Roletne</li>
                 </Link>
-                <li>Sanitarne pregrade</li>
-                <li>Kapije i ograde</li>
-                <li>Komarnici</li>
-                <li>Trakaste zavese</li>
+                <Link href='/sanitarne-pregrade'>
+                  {' '}
+                  <li>Sanitarne Pregrade</li>
+                </Link>
+                <Link href='/kapije'>
+                  {' '}
+                  <li>Kapije i ograde</li>
+                </Link>
+                <Link href='/komarnici'>
+                  {' '}
+                  <li>Komarnici</li>
+                </Link>
               </ul>
             </div>
           </div>

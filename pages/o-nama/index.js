@@ -73,12 +73,12 @@ const Onama = () => {
 
       <VideoSection src={'images/onama-video.mp4'} />
       <MarketSection
-        heading={'Zasto poslovati sa nama'}
+        heading={'Zašto poslovati sa nama'}
         counterNum={''}
         counterDescription={''}
-        boldDescription={'Lorem ipsum dolor sit amet, '}
+        boldDescription={'Mi smo tim iskusnih profesionalaca '}
         description={
-          'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+          'koji su posvećeni pružanju izuzetnih rezultata, bilo da se radi o ugradnji prozora i vrata ili pružanju ostalih usluga iz našeg poslovanja. Naš cilj je da nadmašimo vaša očekivanja i stvorimo trajne odnose sa našim klijentima.'
         }
       />
     </MainLayout>

@@ -6,7 +6,7 @@ import kapije from './../../public/images/ograda-hero.png'
 import pregrade from './../../public/images/pregrad-hero.jpg'
 import garazna from './../../public/images/garazna-hero.jpg'
 import roletne from './../../public/images/roletne-hero.jpg'
-import komarnici from './../../public/images/komarnici-hero.jpg'
+import komarnici from './../../public/images/komarnici-hero.png'
 import Image from 'next/image'
 
 import { useRouter } from 'next/router'
@@ -97,7 +97,7 @@ const Categories = () => {
 
       <div className='divide-4'>
         <div className='slider-card'>
-          <div className='slider-img'>
+          <div className='slider-img' onClick={() => router.push('/kapije')}>
             <div className='overlay' />
             <Image
               src={kapije}
@@ -111,7 +111,9 @@ const Categories = () => {
           <div className='slider-info'>
             <h6>Ograde, gelenderi i </h6>
             <h2>Kapije</h2>
-            <div className='btn'>Pogledajte nase radove</div>
+            <div className='btn' onClick={() => router.push('/kapije')}>
+              Pogledajte nase radove
+            </div>
             <div className='underline'></div>
           </div>
         </div>
@@ -139,7 +141,10 @@ const Categories = () => {
         </div>
 
         <div className='slider-card'>
-          <div className='slider-img'>
+          <div
+            className='slider-img'
+            onClick={() => router.push('/sanitarne-pregrade')}
+          >
             <div className='overlay' />
             <Image
               src={pregrade}
@@ -153,13 +158,18 @@ const Categories = () => {
           <div className='slider-info'>
             <h6>Fiksni, rolo i plisirani</h6>
             <h2>Sanitarne pregrade</h2>
-            <div className='btn'>Pogledajte nase radove</div>
+            <div
+              className='btn'
+              onClick={() => router.push('/sanitarne-pregrade')}
+            >
+              Pogledajte nase radove
+            </div>
             <div className='underline'></div>
           </div>
         </div>
 
         <div className='slider-card'>
-          <div className='slider-img'>
+          <div className='slider-img' onClick={() => router.push('/komarnici')}>
             <div className='overlay' />
             <Image
               src={komarnici}
@@ -173,7 +183,9 @@ const Categories = () => {
           <div className='slider-info'>
             <h6>Fiksni, rolo i plisirani</h6>
             <h2>Komarnici</h2>
-            <div className='btn'>Pogledajte nase radove</div>
+            <div className='btn' onClick={() => router.push('/komarnici')}>
+              Pogledajte nase radove
+            </div>
             <div className='underline'></div>
           </div>
         </div>

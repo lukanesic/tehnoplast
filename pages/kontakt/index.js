@@ -31,18 +31,31 @@ const Kontakt = () => {
             nama.
           </p>
           <span>
-            <FaFacebookF className='icon' /> <a href='#'>tehnoplast.facebook</a>
+            <FaFacebookF className='icon' />{' '}
+            <a
+              href='https://www.facebook.com/tehnoplast.co.rs/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              tehnoplast.facebook
+            </a>
           </span>
           <span>
             <FaInstagram className='icon' />{' '}
-            <a href='#'>tehnoplast.instagram</a>
+            <a
+              href='https://www.instagram.com/tehnoplast.co.rs'
+              target='_blank'
+              rel='noreferrer'
+            >
+              tehnoplast.instagram
+            </a>
           </span>
         </div>
         <div className='box'>
           <h6>Putem Email-a</h6>
           <p>Budite slobodni da nas kontaktirate putem email-a.</p>
           <span>
-            <a href='#' className='mail'>
+            <a href='mailto:info@tehnoplast.co.rs' className='mail'>
               info@tehnoplast.co.rs
             </a>
           </span>
@@ -52,15 +65,15 @@ const Kontakt = () => {
           <p>Budite slobodni da nas pozovete na sledece brojeve</p>
           <span>
             <HiOutlinePhone className='icon' />{' '}
-            <a href='#'>+ 38163601283, Ivank</a>
+            <a href='tel:+38163601283'>+381 63 601 283, Ivan</a>
           </span>
           <span>
             <HiOutlinePhone className='icon' />{' '}
-            <a href='#'>+ 38163601283, Stefan</a>
+            <a href='tel:+38162466555'>+381 62 466 555, Stefan</a>
           </span>
           <span>
             <HiOutlinePhone className='icon' />{' '}
-            <a href='#'>+ 38134852123, Tel/Fax</a>
+            <a href='tel:+38134852123'>+ 381 34 852 123, Tel/Fax</a>
           </span>
         </div>
       </div>
@@ -82,12 +95,12 @@ const Kontakt = () => {
       </div>
 
       <MarketSection
-        heading={'Zasto poslovati sa nama'}
+        heading={'Zašto poslovati sa nama'}
         counterNum={''}
         counterDescription={''}
-        boldDescription={'Lorem ipsum dolor sit amet, '}
+        boldDescription={'Mi smo tim iskusnih profesionalaca '}
         description={
-          'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+          'koji su posvećeni pružanju izuzetnih rezultata, bilo da se radi o ugradnji prozora i vrata ili pružanju ostalih usluga iz našeg poslovanja. Naš cilj je da nadmašimo vaša očekivanja i stvorimo trajne odnose sa našim klijentima.'
         }
       />
     </MainLayout>

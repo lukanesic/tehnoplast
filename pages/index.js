@@ -43,9 +43,9 @@ export default function Home() {
         <VideoSection src={'images/video.mp4'} />
 
         <MarketSection
-          heading={'Po Vasoj meri'}
+          heading={'Po Vašoj meri'}
           counterNum={'1000+'}
-          counterDescription={'musterija'}
+          counterDescription={'mušterija'}
           boldDescription={'Naši proizvodi '}
           description={'dolaze u bojama i dimenzijama koje vi izaberete.'}
         />
