@@ -85,7 +85,7 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Fiksni, rolo i plisirani</h6>
+            <h6>Visekomorni PVC prozori</h6>
             <h2>Prozori</h2>
             <div className='btn' onClick={() => router.push('/prozori')}>
               Pogledajte nase radove
@@ -131,8 +131,8 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Fiksni, rolo i plisirani</h6>
-            <h2>Roletne i kapaci</h2>
+            <h6>Aluminijumske</h6>
+            <h2>Roletne</h2>
             <div className='btn' onClick={() => router.push('/roletne')}>
               Pogledajte nase radove
             </div>
@@ -156,8 +156,8 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Fiksni, rolo i plisirani</h6>
-            <h2>Sanitarne pregrade</h2>
+            <h6>Sanitarne</h6>
+            <h2>Pregrade</h2>
             <div
               className='btn'
               onClick={() => router.push('/sanitarne-pregrade')}
@@ -229,7 +229,7 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Ograde, gelenderi i </h6>
+            <h6>Segmentna i rolo </h6>
             <h2>Garazna vrata</h2>
             <div className='btn' onClick={() => router.push('/garazna-vrata')}>
               Pogledajte nase radove

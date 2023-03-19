@@ -17,8 +17,7 @@ const MarketSection = ({
         <h5>{counterNum}</h5> <span>{counterDescription}</span>
       </div>
       <p>
-        <span>{boldDescription}</span>
-        {description}
+        <span>{boldDescription}</span> {description}
       </p>
     </div>
   )

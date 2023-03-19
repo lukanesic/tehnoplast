@@ -7,7 +7,22 @@ import VideoSection from '../components/VideoSection'
 
 import MainLayout from '../layout/MainLayout'
 
+import { useRouter } from 'next/router'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import Link from 'next/link'
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['home'])),
+    },
+  }
+}
+
 export default function Home() {
+  const { t } = useTranslation()
+
   return (
     <>
       <Head>
@@ -18,14 +33,21 @@ export default function Home() {
 
       <MainLayout>
         <Hero />
+
+        <Link href='/' locale='de'>
+          To german
+        </Link>
+
+        <Link href='/' locale='sr'>
+          To serbian
+        </Link>
+
         <MarketSection
-          heading={'Proizvodi'}
+          heading={t('home:product_header')}
           counterNum={'20+'}
-          counterDescription={'godina iskustva'}
-          boldDescription={'Naši proizvodi imaju široku primenu '}
-          description={
-            'u izgradnji nosivih konstrukcija iu svim vrstama ograda, kako u industrijskom tako i u privatnom sektoru.'
-          }
+          counterDescription={t('home:exp_header')}
+          boldDescription={t('home:product_desc_h')}
+          description={t('home:product_desc')}
         />
 
         <MobileSlider />
