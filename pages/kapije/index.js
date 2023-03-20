@@ -12,23 +12,46 @@ import test4 from './../../public/images/kapije/test4.png'
 import test5 from './../../public/images/kapije/test5.png'
 import test6 from './../../public/images/kapije/test6.png'
 
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['vrata'])),
+    },
+  }
+}
+
 const Kapije = () => {
+  const { t } = useTranslation()
   return (
-    <MainLayout>
+    <MainLayout
+      footerTranslate={t('vrata:footer_desc')}
+      prozoriCat={t('vrata:prozori_cat')}
+      kapijeCat={t('vrata:kapije_cat')}
+      roletneCat={t('vrata:roletne_cat')}
+      pregradeCat={t('vrata:pregrade_cat')}
+      vrataCat={t('vrata:vrata_cat')}
+      garaznaCat={t('vrata:garazna_cat')}
+      proizvodiH={t('vrata:product_header')}
+      komarniciCat={t('vrata:komarnici_cat')}
+      pocetnaH={t('vrata:pocetna_header')}
+      onama={t('vrata:onama_header')}
+      kontakt={t('vrata:kontakt_header')}
+    >
       <CategoryHero
-        title={'Kapije i ograde'}
+        title={t('vrata:kapije_cat')}
         description={'Tehnoplast, Lapovo'}
         img={ograda}
       />
 
       <MarketSection
-        heading={'Projekti'}
+        heading={t('vrata:projects_header')}
         counterNum={''}
         counterDescription={''}
-        boldDescription={'Naši PVC i ALU '}
-        description={
-          'projekti se kreću od ugradnje prozora i vrata, kliznih vrata, kapija, roletni do izrade po meri za stambene i poslovne klijente.'
-        }
+        boldDescription={t('vrata:project_header_bold')}
+        description={t('vrata:project_header_desc')}
       />
 
       <div className='o-nama-section wrapper'>
@@ -96,13 +119,11 @@ const Kapije = () => {
       </div>
 
       <MarketSection
-        heading={'Zašto poslovati sa nama'}
+        heading={t('vrata:poslovanje_header')}
         counterNum={''}
         counterDescription={''}
-        boldDescription={'Mi smo tim iskusnih profesionalaca '}
-        description={
-          'koji su posvećeni pružanju izuzetnih rezultata, bilo da se radi o ugradnji prozora i vrata ili pružanju ostalih usluga iz našeg poslovanja. Naš cilj je da nadmašimo vaša očekivanja i stvorimo trajne odnose sa našim klijentima.'
-        }
+        boldDescription={t('vrata:poslovanje_header_bold')}
+        description={t('vrata:poslovanje_header_desc')}
       />
     </MainLayout>
   )
