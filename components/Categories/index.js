@@ -63,7 +63,23 @@ const data = [
   },
 ]
 
-const Categories = () => {
+const Categories = ({
+  prozoriCat,
+  prozoriDesc,
+  kapijeCat,
+  kapijeDesc,
+  roletneCat,
+  roletneDesc,
+  pregradeCat,
+  pregradeDesc,
+  komarniciCat,
+  komarniciDesc,
+  vrataCat,
+  vrataDesc,
+  garaznaCat,
+  garaznaDesc,
+  buttonDesc,
+}) => {
   const router = useRouter()
 
   return (
@@ -85,10 +101,10 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Visekomorni PVC prozori</h6>
-            <h2>Prozori</h2>
+            <h6>{prozoriDesc}</h6>
+            <h2>{prozoriCat}</h2>
             <div className='btn' onClick={() => router.push('/prozori')}>
-              Pogledajte nase radove
+              {buttonDesc}
             </div>
             <div className='underline'></div>
           </div>
@@ -109,10 +125,10 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Ograde, gelenderi i </h6>
-            <h2>Kapije</h2>
+            <h6>{kapijeDesc}</h6>
+            <h2>{kapijeCat}</h2>
             <div className='btn' onClick={() => router.push('/kapije')}>
-              Pogledajte nase radove
+              {buttonDesc}
             </div>
             <div className='underline'></div>
           </div>
@@ -131,10 +147,10 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Aluminijumske</h6>
-            <h2>Roletne</h2>
+            <h6>{roletneDesc}</h6>
+            <h2>{roletneCat}</h2>
             <div className='btn' onClick={() => router.push('/roletne')}>
-              Pogledajte nase radove
+              {buttonDesc}
             </div>
             <div className='underline'></div>
           </div>
@@ -156,13 +172,13 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Sanitarne</h6>
-            <h2>Pregrade</h2>
+            <h6>{pregradeDesc}</h6>
+            <h2>{pregradeCat}</h2>
             <div
               className='btn'
               onClick={() => router.push('/sanitarne-pregrade')}
             >
-              Pogledajte nase radove
+              {buttonDesc}
             </div>
             <div className='underline'></div>
           </div>
@@ -181,10 +197,10 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Fiksni, rolo i plisirani</h6>
-            <h2>Komarnici</h2>
+            <h6>{komarniciDesc}</h6>
+            <h2>{komarniciCat}</h2>
             <div className='btn' onClick={() => router.push('/komarnici')}>
-              Pogledajte nase radove
+              {buttonDesc}
             </div>
             <div className='underline'></div>
           </div>
@@ -205,10 +221,10 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Ulazna, sobna i klizna</h6>
-            <h2>Vrata</h2>
+            <h6>{vrataDesc}</h6>
+            <h2>{vrataCat}</h2>
             <div className='btn' onClick={() => router.push('/vrata')}>
-              Pogledajte nase radove
+              {buttonDesc}
             </div>
             <div className='underline'></div>
           </div>
@@ -229,10 +245,10 @@ const Categories = () => {
             />
           </div>
           <div className='slider-info'>
-            <h6>Segmentna i rolo </h6>
-            <h2>Garazna vrata</h2>
+            <h6>{garaznaDesc} </h6>
+            <h2>{garaznaCat}</h2>
             <div className='btn' onClick={() => router.push('/garazna-vrata')}>
-              Pogledajte nase radove
+              {buttonDesc}
             </div>
             <div className='underline'></div>
           </div>

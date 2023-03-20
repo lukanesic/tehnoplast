@@ -12,64 +12,80 @@ import komarnici from './../../public/images/komarnici-hero.jpg'
 
 import { useRouter } from 'next/router'
 
-const data = [
-  {
-    id: 1,
-    title: 'Prozori',
-    subtitle: 'Fiksni, rolo i plisirani',
-    src: prozori,
-    alt: 'Tehnoplast Prozori PVC i ALU',
-    link: '/prozori',
-  },
-  {
-    id: 2,
-    title: 'Vrata',
-    subtitle: 'Ulazna, sobna i klizna',
-    src: vrata,
-    alt: 'Tehnoplast Vrata PVC i ALU',
-    link: '/vrata',
-  },
-  {
-    id: 3,
-    title: 'Garazna vrata',
-    subtitle: 'Fiksni, rolo i plisirani',
-    src: garazna,
-    alt: 'Tehnoplast Garazna vrata PVC i ALU',
-    link: '/garazna-vrata',
-  },
-  {
-    id: 4,
-    title: 'Roletne i kapaci',
-    subtitle: 'Fiksni, rolo i plisirani',
-    src: roletne,
-    alt: 'Tehnoplast Roletne i kapaci PVC i ALU',
-    link: '/roletne',
-  },
-  {
-    id: 5,
-    title: 'Kapije',
-    subtitle: 'Ograde, gelenderi i',
-    src: kapije,
-    alt: 'Tehnoplast Ograde, Gelenderi i Kapije PVC i ALU',
-  },
-  {
-    id: 6,
-    title: 'Sanitarne pregrade',
-    subtitle: 'Fiksni, rolo i plisirani',
-    src: pregrade,
-    alt: 'Tehnoplast Pregrade PVC i ALU',
-  },
+const MobileSlider = ({
+  prozoriCat,
+  prozoriDesc,
+  kapijeCat,
+  kapijeDesc,
+  roletneCat,
+  roletneDesc,
+  pregradeCat,
+  pregradeDesc,
+  komarniciCat,
+  komarniciDesc,
+  vrataCat,
+  vrataDesc,
+  garaznaCat,
+  garaznaDesc,
+  buttonDesc,
+}) => {
+  const data = [
+    {
+      id: 1,
+      title: prozoriCat,
+      subtitle: prozoriDesc,
+      src: prozori,
+      alt: 'Tehnoplast Prozori PVC i ALU',
+      link: '/prozori',
+    },
+    {
+      id: 2,
+      title: vrataCat,
+      subtitle: vrataDesc,
+      src: vrata,
+      alt: 'Tehnoplast Vrata PVC i ALU',
+      link: '/vrata',
+    },
+    {
+      id: 3,
+      title: garaznaCat,
+      subtitle: garaznaDesc,
+      src: garazna,
+      alt: 'Tehnoplast Garazna vrata PVC i ALU',
+      link: '/garazna-vrata',
+    },
+    {
+      id: 4,
+      title: roletneCat,
+      subtitle: roletneDesc,
+      src: roletne,
+      alt: 'Tehnoplast Roletne i kapaci PVC i ALU',
+      link: '/roletne',
+    },
+    {
+      id: 5,
+      title: kapijeCat,
+      subtitle: kapijeDesc,
+      src: kapije,
+      alt: 'Tehnoplast Ograde, Gelenderi i Kapije PVC i ALU',
+    },
+    {
+      id: 6,
+      title: pregradeCat,
+      subtitle: pregradeDesc,
+      src: pregrade,
+      alt: 'Tehnoplast Pregrade PVC i ALU',
+    },
 
-  {
-    id: 7,
-    title: 'Komarnici',
-    subtitle: 'Fiksni, rolo i plisirani',
-    src: komarnici,
-    alt: 'Tehnoplast Komarnici PVC i ALU',
-  },
-]
+    {
+      id: 7,
+      title: komarniciCat,
+      subtitle: komarniciDesc,
+      src: komarnici,
+      alt: 'Tehnoplast Komarnici PVC i ALU',
+    },
+  ]
 
-const MobileSlider = () => {
   let settings = {
     dots: true,
     infinite: true,

@@ -6,7 +6,21 @@ import Link from 'next/link'
 import Image from 'next/image'
 import logo from './../../public/images/tehnoplast-logo-dark.png'
 
-const Sidemenu = ({ open, setOpen }) => {
+const Sidemenu = ({
+  open,
+  setOpen,
+  prozoriCat,
+  kapijeCat,
+  roletneCat,
+  pregradeCat,
+  vrataCat,
+  garaznaCat,
+  komarniciCat,
+  proizvodiH,
+  pocetnaH,
+  kontakt,
+  onama,
+}) => {
   useEffect(() => {
     if (open) {
       const width = document.body.clientWidth
@@ -55,16 +69,16 @@ const Sidemenu = ({ open, setOpen }) => {
                   <h6 className='menu-heading'>Menu</h6>
                   <Link href={'/'}>
                     {' '}
-                    <li>Početna</li>
+                    <li>{pocetnaH}</li>
                   </Link>
 
                   <Link href={'/o-nama'}>
                     {' '}
-                    <li>O Nama</li>
+                    <li>{onama}</li>
                   </Link>
                   <Link href={'/kontakt'}>
                     {' '}
-                    <li>Kontakt</li>
+                    <li>{kontakt}</li>
                   </Link>
                 </div>
 
@@ -78,36 +92,36 @@ const Sidemenu = ({ open, setOpen }) => {
                 </div>
               </ul>
               <ul className='large-menu'>
-                <h6 className='menu-heading'>Proizvodi</h6>
+                <h6 className='menu-heading'>{proizvodiH}</h6>
                 <Link href='/prozori'>
                   {' '}
-                  <li>Prozori</li>
+                  <li>{prozoriCat}</li>
                 </Link>
 
                 <Link href='/vrata'>
                   {' '}
-                  <li>Vrata</li>
+                  <li>{vrataCat}</li>
                 </Link>
                 <Link href='/garazna-vrata'>
                   {' '}
-                  <li>Garazna vrata</li>
+                  <li>{garaznaCat}</li>
                 </Link>
 
                 <Link href='/roletne'>
                   {' '}
-                  <li>Roletne</li>
+                  <li>{roletneCat}</li>
                 </Link>
                 <Link href='/sanitarne-pregrade'>
                   {' '}
-                  <li>Sanitarne Pregrade</li>
+                  <li>{pregradeCat}</li>
                 </Link>
                 <Link href='/kapije'>
                   {' '}
-                  <li>Kapije i ograde</li>
+                  <li>{kapijeCat}</li>
                 </Link>
                 <Link href='/komarnici'>
                   {' '}
-                  <li>Komarnici</li>
+                  <li>{komarniciCat}</li>
                 </Link>
               </ul>
             </div>

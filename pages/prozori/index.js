@@ -8,24 +8,45 @@ import ProzoriHero from './../../public/images/prozori-hero.jpg'
 
 import { prozori } from './../../data/prozori'
 
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['prozori'])),
+    },
+  }
+}
+
 const Prozori = () => {
+  const { t } = useTranslation()
   return (
-    <MainLayout>
+    <MainLayout
+      footerTranslate={t('prozori:footer_desc')}
+      prozoriCat={t('prozori:prozori_cat')}
+      kapijeCat={t('prozori:kapije_cat')}
+      roletneCat={t('prozori:roletne_cat')}
+      pregradeCat={t('prozori:pregrade_cat')}
+      vrataCat={t('prozori:vrata_cat')}
+      garaznaCat={t('prozori:garazna_cat')}
+      proizvodiH={t('prozori:product_header')}
+      komarniciCat={t('prozori:komarnici_cat')}
+      pocetnaH={t('prozori:pocetna_header')}
+      onama={t('prozori:onama_header')}
+      kontakt={t('prozori:kontakt_header')}
+    >
       <CategoryHero
         img={ProzoriHero}
-        title={'Prozori'}
-        description={
-          'Visekomorni PVC prozori proizvedeni po najsavremenijoj tehnologiji.'
-        }
+        title={t('prozori:prozori_cat')}
+        description={t('prozori:prozori_page_desc')}
       />
       <MarketSection
-        heading={'Projekti'}
+        heading={t('prozori:projects_header')}
         counterNum={''}
         counterDescription={''}
-        boldDescription={'Naši PVC i ALU '}
-        description={
-          'projekti se kreću od ugradnje prozora i vrata, kliznih vrata, kapija, roletni do izrade po meri za stambene i poslovne klijente.'
-        }
+        boldDescription={t('prozori:project_header_bold')}
+        description={t('prozori:project_header_desc')}
       />
 
       {prozori.map((prozor) => (
@@ -44,13 +65,11 @@ const Prozori = () => {
       ))}
 
       <MarketSection
-        heading={'Zasto poslovati sa nama'}
+        heading={t('prozori:poslovanje_header')}
         counterNum={''}
         counterDescription={''}
-        boldDescription={'Mi smo tim iskusnih profesionalaca '}
-        description={
-          'koji su posvećeni pružanju izuzetnih rezultata, bilo da se radi o ugradnji prozora i vrata ili pružanju ostalih usluga iz našeg poslovanja. Naš cilj je da nadmašimo vaša očekivanja i stvorimo trajne odnose sa našim klijentima.'
-        }
+        boldDescription={t('prozori:poslovanje_header_bold')}
+        description={t('prozori:poslovanje_header_desc')}
       />
     </MainLayout>
   )

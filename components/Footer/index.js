@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import logo from './../../public/images/tehnoplast-logo-dark.png'
 
-const Footer = () => {
+const Footer = ({ footerTranslate }) => {
   return (
     <footer>
       <div className='footer-container wrapper'>
@@ -10,7 +10,7 @@ const Footer = () => {
           {' '}
           <Image src={logo} alt={'Tehnoplast logo'} fill objectFit='cover' />
         </div>
-        <p>Proizvodnja i ugradnja ALU i PVC stolarije od 2001. godine </p>
+        <p>{footerTranslate} </p>
         <a href='mailto:info@tehnoplast.co.rs' className='email'>
           info@tehnoplast.co.rs{' '}
         </a>
@@ -25,7 +25,13 @@ const Footer = () => {
       <div className='copy-r wrapper'>
         <h6>@ 2023 Tehnoplast, Lapovo</h6>
         <h6>
-          Design & Development <span className='bold'>Luka Nešić</span>
+          Design & Development{' '}
+          <span className='bold'>
+            {' '}
+            <a href='mailto:lukannesic@gmail.com' className='email'>
+              Luka Nešić{' '}
+            </a>
+          </span>
         </h6>
       </div>
     </footer>

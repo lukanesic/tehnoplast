@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 import hero from './../../public/images/hero.jpg'
 
-const Hero = () => {
+const Hero = ({ heading, description }) => {
   return (
     <div className='hero'>
       <Image
@@ -14,12 +14,8 @@ const Hero = () => {
         style={{ zIndex: '-10' }}
       />
       <div className='hero-info wrapper'>
-        <h1 className='h1-heading'>Na Vašoj strani.</h1>
-        <p>
-          Firma Tehnoplast se bavi proizvodnjom i ugradnjom ALU i PVC stolarije
-          od 2001. godine. Na osnovu našeg iskustva možemo Vam garantovati
-          kvalitet naših proizvoda.
-        </p>
+        <h1 className='h1-heading'>{heading}</h1>
+        <p>{description}</p>
       </div>
     </div>
   )

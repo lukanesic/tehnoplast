@@ -927,6 +927,10 @@ footer .copy-r span {
   font-weight: 600;
   color: #000;
 }
+footer .copy-r span a {
+  text-decoration: none;
+  color: #000;
+}
 
 .categories {
   display: none;
