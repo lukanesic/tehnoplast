@@ -47,8 +47,6 @@ const Sidemenu = ({
 
   const { locale } = useRouter()
 
-  console.log(locale)
-
   return (
     <AnimatePresence>
       {open && (
