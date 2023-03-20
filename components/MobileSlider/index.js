@@ -107,6 +107,7 @@ const MobileSlider = ({
           src={category.src}
           alt={category.alt}
           link={category.link}
+          buttonDesc={buttonDesc}
         />
       ))}
     </div>
@@ -115,7 +116,7 @@ const MobileSlider = ({
 
 export default MobileSlider
 
-const SliderCard = ({ src, alt, title, subtitle, link }) => {
+const SliderCard = ({ src, alt, title, subtitle, link, buttonDesc }) => {
   const router = useRouter()
   return (
     <div className='slider-card'>
@@ -132,7 +133,7 @@ const SliderCard = ({ src, alt, title, subtitle, link }) => {
         <h6>{subtitle}</h6>
         <h2>{title}</h2>
         <div className='btn' onClick={() => router.push(link)}>
-          Pogledajte nase radove
+          {buttonDesc}
         </div>
         <div className='underline'></div>
       </div>
