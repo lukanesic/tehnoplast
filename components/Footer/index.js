@@ -6,10 +6,10 @@ const Footer = ({ footerTranslate }) => {
   return (
     <footer>
       <div className='footer-container wrapper'>
-        <div className='normal-logo'>
+        {/* <div className='normal-logo'>
           {' '}
           <Image src={logo} alt={'Tehnoplast logo'} fill objectFit='cover' />
-        </div>
+        </div> */}
         <p>{footerTranslate} </p>
         <a href='mailto:info@tehnoplast.co.rs' className='email'>
           info@tehnoplast.co.rs{' '}
