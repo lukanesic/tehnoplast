@@ -29,9 +29,9 @@ const Profili = ({
         <span className='biger'>{botInfoDesc}</span>
         <p>{description1}</p>
         <p>{description2}</p>
-        <div className='profil-btn' onClick={() => router.push(`${link}`)}>
+        {/* <div className='profil-btn' onClick={() => router.push(`${link}`)}>
           Saznajte vise
-        </div>
+        </div> */}
       </div>
     </div>
   )
