@@ -71,36 +71,6 @@ const Sidemenu = ({
             </motion.div>
 
             <div className='two-menus'>
-              <Link href={'/sr'} locale={locale}>
-                <Image
-                  src={serbia}
-                  alt={'Serbia'}
-                  style={{
-                    position: 'fixed',
-                    top: '2rem',
-                    right: '20rem',
-                    width: '50px',
-                    height: '50px',
-                    cursor: 'pointer',
-                  }}
-                />
-              </Link>
-
-              <Link href={'/de'} locale={locale}>
-                <Image
-                  src={germany}
-                  alt={'Germany'}
-                  style={{
-                    position: 'fixed',
-                    top: '2rem',
-                    right: '25rem',
-                    width: '50px',
-                    height: '50px',
-                    cursor: 'pointer',
-                  }}
-                />
-              </Link>
-
               <ul className='small-menu'>
                 <div>
                   <h6 className='menu-heading'>Menu</h6>
@@ -116,6 +86,32 @@ const Sidemenu = ({
                   <Link href={'/kontakt'}>
                     {' '}
                     <li>{kontakt}</li>
+                  </Link>
+                  <Link href={'/sr'} locale={locale}>
+                    <Image
+                      src={serbia}
+                      alt={'Serbia'}
+                      style={{
+                        right: '20rem',
+                        width: '50px',
+                        height: '50px',
+                        cursor: 'pointer',
+                        marginRight: '2rem',
+                        marginTop: '2rem',
+                      }}
+                    />
+                  </Link>
+                  <Link href={'/de'} locale={locale}>
+                    <Image
+                      src={germany}
+                      alt={'Germany'}
+                      style={{
+                        right: '25rem',
+                        width: '50px',
+                        height: '50px',
+                        cursor: 'pointer',
+                      }}
+                    />
                   </Link>
                 </div>
 

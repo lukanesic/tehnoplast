@@ -54,14 +54,6 @@ export default function Home({ locale }) {
           description={t('home:ladning_desc')}
         />
 
-        <Link href='/' locale='de'>
-          To german
-        </Link>
-
-        <Link href='/' locale='sr'>
-          To serbian
-        </Link>
-
         <MarketSection
           heading={t('home:product_header')}
           counterNum={'20+'}
