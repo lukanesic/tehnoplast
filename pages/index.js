@@ -20,7 +20,7 @@ export async function getStaticProps({ locale }) {
   }
 }
 
-export default function Home() {
+export default function Home({ locale }) {
   const { t } = useTranslation()
 
   return (
@@ -44,6 +44,10 @@ export default function Home() {
         pocetnaH={t('home:pocetna_header')}
         onama={t('home:onama_header')}
         kontakt={t('home:kontakt_header')}
+        localeSrb={'/sr'}
+        localeGer={'/de'}
+        hrefSrb={'/'}
+        hrefGer={'/'}
       >
         <Hero
           heading={t('home:ladning_h')}

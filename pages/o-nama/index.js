@@ -11,22 +11,45 @@ import tehnor3 from './../../public/images/tehnoplast3.png'
 import tehnor2 from './../../public/images/tehnoplast2.png'
 import VideoSection from '../../components/VideoSection'
 
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['about'])),
+    },
+  }
+}
+
 const Onama = () => {
+  const { t } = useTranslation()
   return (
-    <MainLayout>
+    <MainLayout
+      footerTranslate={t('about:footer_desc')}
+      prozoriCat={t('about:prozori_cat')}
+      kapijeCat={t('about:kapije_cat')}
+      roletneCat={t('about:roletne_cat')}
+      pregradeCat={t('about:pregrade_cat')}
+      vrataCat={t('about:vrata_cat')}
+      garaznaCat={t('about:garazna_cat')}
+      proizvodiH={t('about:product_header')}
+      komarniciCat={t('about:komarnici_cat')}
+      pocetnaH={t('about:pocetna_header')}
+      onama={t('about:onama_header')}
+      kontakt={t('about:kontakt_header')}
+    >
       <CategoryHero
-        title={'Na Vašoj strani'}
+        title={t('about:ladning_h')}
         description={'Tehnoplast, Lapovo'}
         img={onama}
       />
       <MarketSection
         heading={'Tehnoplast'}
         counterNum={'20+'}
-        counterDescription={'godina iskustva'}
-        boldDescription={'Firma Tehnoplast '}
-        description={
-          'se bavi proizvodnjom i ugradnjom ALU i PVC stolarije od 2001. godine. Na osnovu našeg iskustva možemo Vam garantovati kvalitet naših proizvoda.'
-        }
+        counterDescription={t('about:godine_h')}
+        boldDescription={t('about:bold_h')}
+        description={t('about:about_desc')}
       />
 
       <div className='o-nama-section wrapper'>
@@ -62,24 +85,21 @@ const Onama = () => {
       </div>
 
       <MarketSection
-        heading={'Poslovanje'}
+        heading={t('about:poslovanje_header')}
         counterNum={'500+'}
-        counterDescription={'uspesnih projekata'}
-        boldDescription={'Pored toga '}
-        description={
-          'što radimo po standardima Evropske unije i zadovoljavamo lične zahteve klijenata - sada imamo mogućnosti i da vam na više mesta u Evropi pokažemo naše sisteme i dokažemo kvalitet čak i pre poručivanja stolarije za vaše objekte'
-        }
+        counterDescription={t('about:poslovanje_uspesnih')}
+        boldDescription={t('about:poslovanje_bold')}
+        description={t('about:poslovanje_desc')}
       />
 
       <VideoSection src={'images/onama-video.mp4'} />
+
       <MarketSection
-        heading={'Zašto poslovati sa nama'}
+        heading={t('about:poslov_h')}
         counterNum={''}
         counterDescription={''}
-        boldDescription={'Mi smo tim iskusnih profesionalaca '}
-        description={
-          'koji su posvećeni pružanju izuzetnih rezultata, bilo da se radi o ugradnji prozora i vrata ili pružanju ostalih usluga iz našeg poslovanja. Naš cilj je da nadmašimo vaša očekivanja i stvorimo trajne odnose sa našim klijentima.'
-        }
+        boldDescription={t('about:poslov_h_bold')}
+        description={t('about:poslovanje_header_desc')}
       />
     </MainLayout>
   )

@@ -21,6 +21,10 @@ const MainLayout = ({
   pocetnaH,
   kontakt,
   onama,
+  localeSrb,
+  localeGer,
+  hrefSrb,
+  hrefGer,
 }) => {
   const [open, setOpen] = useState(false)
 
@@ -41,6 +45,10 @@ const MainLayout = ({
         pocetnaH={pocetnaH}
         kontakt={kontakt}
         onama={onama}
+        localeSrb={localeSrb}
+        localeGer={localeGer}
+        hrefSrb={hrefSrb}
+        hrefGer={hrefGer}
       />
       <Nav open={open} setOpen={setOpen} dark={dark && dark} />
       {children}

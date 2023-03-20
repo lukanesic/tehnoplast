@@ -9,27 +9,49 @@ import Image from 'next/image'
 import location from './../../public/images/loc.jpg'
 import kontakt from './../../public/images/kontakt.jpg'
 
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['contact'])),
+    },
+  }
+}
+
 const Kontakt = () => {
+  const { t } = useTranslation()
   return (
-    <MainLayout>
+    <MainLayout
+      footerTranslate={t('contact:footer_desc')}
+      prozoriCat={t('contact:prozori_cat')}
+      kapijeCat={t('contact:kapije_cat')}
+      roletneCat={t('contact:roletne_cat')}
+      pregradeCat={t('contact:pregrade_cat')}
+      vrataCat={t('contact:vrata_cat')}
+      garaznaCat={t('contact:garazna_cat')}
+      proizvodiH={t('contact:product_header')}
+      komarniciCat={t('contact:komarnici_cat')}
+      pocetnaH={t('contact:pocetna_header')}
+      onama={t('contact:onama_header')}
+      kontakt={t('contact:kontakt_header')}
+    >
       <CategoryHero
-        title={'Kontakt'}
-        description={'Budimo u kontaktu'}
+        title={t('contact:kontakt_header')}
+        description={t('contact:budimo')}
         img={kontakt}
       />
       <MarketSection
         heading={'Tehnoplast'}
-        boldDescription={'Budite u kontaktu '}
-        description={'sa nama na više načina.'}
+        boldDescription={t('contact:contact_bold')}
+        description={t('contact:contact_desc')}
       />
 
       <div className='kontakt-content wrapper'>
         <div className='box'>
-          <h6>Putem društevnih mreža</h6>
-          <p>
-            Budite slobodni da postetite nase profile i ostvarite kontakt sa
-            nama.
-          </p>
+          <h6>{t('contact:social')}</h6>
+          <p>{t('contact:social_desc')}</p>
           <span>
             <FaFacebookF className='icon' />{' '}
             <a
@@ -52,8 +74,8 @@ const Kontakt = () => {
           </span>
         </div>
         <div className='box'>
-          <h6>Putem Email-a</h6>
-          <p>Budite slobodni da nas kontaktirate putem email-a.</p>
+          <h6>{t('contact:email')}</h6>
+          <p>{t('contact:email_desc')}</p>
           <span>
             <a href='mailto:info@tehnoplast.co.rs' className='mail'>
               info@tehnoplast.co.rs
@@ -61,8 +83,8 @@ const Kontakt = () => {
           </span>
         </div>
         <div className='box'>
-          <h6>Putem Telefona</h6>
-          <p>Budite slobodni da nas pozovete na sledece brojeve</p>
+          <h6>{t('contact:phone')}</h6>
+          <p>{t('contact:phone_desc')}</p>
           <span>
             <HiOutlinePhone className='icon' />{' '}
             <a href='tel:+38163601283'>+381 63 601 283, Ivan</a>
@@ -79,7 +101,7 @@ const Kontakt = () => {
       </div>
 
       <MarketSection
-        heading={'Pronađite nas'}
+        heading={t('contact:loc_h')}
         boldDescription={'Ul. Kosovskih junaka br. 20, 34220 Lapovo'}
         description={''}
       />
@@ -95,13 +117,11 @@ const Kontakt = () => {
       </div>
 
       <MarketSection
-        heading={'Zašto poslovati sa nama'}
+        heading={t('contact:poslovanje_header')}
         counterNum={''}
         counterDescription={''}
-        boldDescription={'Mi smo tim iskusnih profesionalaca '}
-        description={
-          'koji su posvećeni pružanju izuzetnih rezultata, bilo da se radi o ugradnji prozora i vrata ili pružanju ostalih usluga iz našeg poslovanja. Naš cilj je da nadmašimo vaša očekivanja i stvorimo trajne odnose sa našim klijentima.'
-        }
+        boldDescription={t('contact:poslovanje_header_bold')}
+        description={t('contact:poslovanje_header_desc')}
       />
     </MainLayout>
   )

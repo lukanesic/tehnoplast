@@ -5,6 +5,10 @@ import Link from 'next/link'
 
 import Image from 'next/image'
 import logo from './../../public/images/tehnoplast-logo-dark.png'
+import serbia from './../../public/serbia.png'
+import germany from './../../public/germany.png'
+
+import { useRouter } from 'next/router'
 
 const Sidemenu = ({
   open,
@@ -20,6 +24,10 @@ const Sidemenu = ({
   pocetnaH,
   kontakt,
   onama,
+  localeSrb,
+  localeGer,
+  hrefSrb,
+  hrefGer,
 }) => {
   useEffect(() => {
     if (open) {
@@ -36,6 +44,10 @@ const Sidemenu = ({
       document.body.style.width = `auto`
     }
   }, [open])
+
+  const { locale } = useRouter()
+
+  console.log(locale)
 
   return (
     <AnimatePresence>
@@ -55,15 +67,40 @@ const Sidemenu = ({
               exit={{ opacity: 0 }}
               transition={{ duration: 0.4, delay: 0.6 }}
             >
-              <Image
-                src={logo}
-                alt={'Tehnoplast logo'}
-                fill
-                objectFit='contain'
-              />
+              <div className='flag'></div>
             </motion.div>
 
             <div className='two-menus'>
+              <Link href={'/sr'} locale={locale}>
+                <Image
+                  src={serbia}
+                  alt={'Serbia'}
+                  style={{
+                    position: 'fixed',
+                    top: '2rem',
+                    right: '20rem',
+                    width: '50px',
+                    height: '50px',
+                    cursor: 'pointer',
+                  }}
+                />
+              </Link>
+
+              <Link href={'/de'} locale={locale}>
+                <Image
+                  src={germany}
+                  alt={'Germany'}
+                  style={{
+                    position: 'fixed',
+                    top: '2rem',
+                    right: '25rem',
+                    width: '50px',
+                    height: '50px',
+                    cursor: 'pointer',
+                  }}
+                />
+              </Link>
+
               <ul className='small-menu'>
                 <div>
                   <h6 className='menu-heading'>Menu</h6>
